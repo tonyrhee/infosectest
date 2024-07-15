@@ -53,7 +53,10 @@ job CHAR(20);
 > 119 Q-6
 
 ```sql
-
+CREATE VIEW CC(ccid, ccname, instname) AS
+SELECT Course.id, Course.name, Instructor.name
+FROM Course, Instructor
+WHERE Course.instructor = Instructor.id
 
 ```
 cc 뷰는 ccid, ccname instname속성을 갖는다
@@ -61,6 +64,27 @@ cc 뷰는 ccid, ccname instname속성을 갖는다
 cc뷰는 course 테이블의 id name Instructor테이블의 name 속성
 
 힌트 `create select from where` 사용함
+#### chat exposition
+Your SQL statement for creating a view is correct in its structure, but it's generally better practice to use explicit JOIN syntax rather than implicit joins using the WHERE clause for better readability and maintainability.
+
+Here's the corrected and improved version of your SQL statement using explicit JOIN syntax:
+
+```sql
+CREATE VIEW CC(ccid, ccname, instname) AS
+SELECT Course.id AS ccid, 
+       Course.name AS ccname, 
+       Instructor.name AS instname
+FROM Course
+JOIN Instructor ON Course.instructor = Instructor.id;
+```
+
+#### Explanation:
+
+- `CREATE VIEW CC(ccid, ccname, instname) AS`: This creates a view named `CC` with columns `ccid`, `ccname`, and `instname`.
+- `SELECT Course.id AS ccid, Course.name AS ccname, Instructor.name AS instname`: This selects the `id` and `name` from the `Course` table and the `name` from the `Instructor` table. The `AS` keyword is used to rename these columns to `ccid`, `ccname`, and `instname` respectively.
+- `FROM Course JOIN Instructor ON Course.instructor = Instructor.id`: This specifies that the `Course` table is joined with the `Instructor` table based on the `instructor` column in the `Course` table matching the `id` column in the `Instructor` table.
+
+This explicit JOIN syntax is preferred because it makes the relationship between the tables clearer and helps prevent errors that might arise from complex WHERE clauses in larger queries.
 
 > 118 q-8
 > 
