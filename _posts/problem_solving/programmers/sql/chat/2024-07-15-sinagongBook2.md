@@ -1,6 +1,6 @@
 ---
 title: "[정처기 실기] 시나공 2권"
-categories: [Programmers, SQL, Oracle, Chat
+categories: [Programmers, SQL, Oracle, Chat]
 tags: [Programmers, SQL, Oracle, chat] 
 ---
 
