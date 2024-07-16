@@ -143,7 +143,23 @@ This ensures that the 직위 column in the 직원 table can only contain one of 
 
 ```
 
+> 121 q6
 
+```sql
+SELECT name
+FROM Product
+WHERE price IS NULL
+ORDER BY name;
+```
+
+> 121 q7
+
+```sql
+SaECT DISTINCT 과목
+FROM 학생
+MHERE 학년 >= 3 AND 점수 >= 80;
+```
+**콤마**와 AND차이는?
 
 ```sql
 
@@ -155,6 +171,11 @@ This ensures that the 직위 column in the 직원 table can only contain one of 
 ```
 
 
+
+```sql
+
+```
+
 ```sql
 
 ```
@@ -163,7 +184,6 @@ This ensures that the 직위 column in the 직원 table can only contain one of 
 ```sql
 
 ```
-
 
 
 ```sql
