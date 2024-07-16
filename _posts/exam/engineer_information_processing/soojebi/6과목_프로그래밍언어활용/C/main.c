@@ -1,4 +1,4 @@
-`include <stdio.h>
+include <stdio.h>
 
 struct Soojebi{
   char name[20];
@@ -40,4 +40,3 @@ void main() {
   // 342+159
   // 501
 }
-```
