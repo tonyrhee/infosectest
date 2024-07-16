@@ -55,7 +55,7 @@ categories: [Study, Spring]
 ![이미지](/assets/img/study/spring/%EB%A0%88%EC%9D%B4%EC%96%B4%EB%93%9C_%EC%95%84%ED%82%A4%ED%85%8D%EC%B2%98(Layered%20Architecture)%EB%9E%80%3F(1).png)
 
 - 상품 서비스 객체를 사용하여 상품에 관련된 비지니스 로직을 처리하면, 상품 관련 기능을 필요로 하는 모든 컨트롤러에서 이를 재사용할 수 있다. 이렇게 하면 코드의 중복을 줄이고 효율적인 개발을 할 수 있다.
-
+![alt text](/assets/img/study/spring/레이어드_아키텍처(Layered Architecture)란_(1).png)
 
 <br>
 **서비스(Service)객체란?**
@@ -191,3 +191,5 @@ try {
 - DispatcherServlet을 경우에 따라서 2개 이상 설정할 수 있는데 이 경우에는 각각의 DispathcerServlet의 ApplicationContext가 각각 독립적이기 때문에 각각의 설정 파일에서 생성한 빈을 서로 사용할 수 없다.
 - 위의 경우와 같이 동시에 필요한 빈은 ContextLoaderListener를 사용함으로써 공통으로 사용하게 할 수 있다.
 - ContextLoaderListener와 DispatcherServlet은 각각 ApplicationContext를 생성하는데, ContextLoaderListener가 생성하는 ApplicationContext가 root컨텍스트가 되고 DispatcherServlet이 생성한 인스턴스는 root컨텍스트를 부모로 하는 자식 컨텍스트가 된다. 참고로, 자식 컨텍스트들은 root컨텍스트의 설정 빈을 사용할 수 있다.
+
+![alt text](/assets/img/study/spring/레이어드_아키텍처(Layered Architecture)란_(2).png)
