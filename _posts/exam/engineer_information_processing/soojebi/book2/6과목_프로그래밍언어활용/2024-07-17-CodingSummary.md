@@ -102,6 +102,161 @@ categories: [Certificate, "[정보처리기사 Book2]",  6과목 코딩]
 피연산자를 1씩 증가 혹은 1씩 감소시킬 때 사용하는 연산자
 * `++`
 * `--`
+The image provides a table of various operators in C/C++ along with their precedence and associativity. Let me break it down for you:
+
+![20240717_192320](https://github.com/user-attachments/assets/b5c27495-4847-477c-9497-5bb4228042e0)
+
+### Categories of Operators:
+1. **단항 연산자 (Unary Operators)**
+2. **산술 연산자 (Arithmetic Operators)**
+3. **시프트 연산자 (Shift Operators)**
+4. **관계 연산자 (Relational Operators)**
+5. **비트 연산자 (Bitwise Operators)**
+6. **논리 연산자 (Logical Operators)**
+7. **삼항 연산자 (Ternary Operator)**
+8. **대입 연산자 (Assignment Operators)**
+9. **순서 연산자 (Sequence Operators)**
+
+### Precedence and Associativity:
+The operators are listed in order of precedence from highest to lowest. Operators on the same row have the same precedence. The direction of the arrow (→ or ←) indicates the associativity of the operators.
+
+#### 1. 단항 연산자 (Unary Operators)
+   - `!` (logical not), `~` (bitwise not), `++` (increment), `--` (decrement), `sizeof` (size of)
+   - **Associativity**: Right to Left (→)
+
+#### 2. 산술 연산자 (Arithmetic Operators)
+   - `*` (multiplication), `/` (division), `%` (modulus)
+   - `+` (addition), `-` (subtraction)
+   - **Associativity**: Left to Right (←)
+
+#### 3. 시프트 연산자 (Shift Operators)
+   - `<<` (left shift), `>>` (right shift)
+   - **Associativity**: Left to Right (←)
+
+#### 4. 관계 연산자 (Relational Operators)
+   - `<` (less than), `<=` (less than or equal to), `>` (greater than), `>=` (greater than or equal to)
+   - **Associativity**: Left to Right (←)
+
+#### 5. 비트 연산자 (Bitwise Operators)
+   - `&` (bitwise and)
+   - `^` (bitwise xor)
+   - `|` (bitwise or)
+   - **Associativity**: Left to Right (←)
+
+#### 6. 논리 연산자 (Logical Operators)
+   - `&&` (logical and)
+   - `||` (logical or)
+   - **Associativity**: Left to Right (←)
+
+#### 7. 삼항 연산자 (Ternary Operator)
+   - `? :` (ternary conditional)
+   - **Associativity**: Right to Left (→)
+
+#### 8. 대입 연산자 (Assignment Operators)
+   - `=`, `+=`, `-=`, `*=`, `/=`, `%=`, `<<=`, `>>=`, `&=`, `^=`, `|=`
+   - **Associativity**: Right to Left (→)
+
+#### 9. 순서 연산자 (Sequence Operators)
+   - `,` (comma)
+   - **Associativity**: Left to Right (←)
+
+### Understanding Operator Precedence and Associativity:
+
+- **Precedence** determines the order in which different operators in an expression are evaluated. For example, in the expression `a + b * c`, the multiplication operator (`*`) has higher precedence than the addition operator (`+`), so `b * c` is evaluated first.
+- **Associativity** determines the order in which operators of the same precedence are evaluated. For example, in the expression `a - b - c`, both subtraction operators (`-`) have the same precedence, so associativity determines the order of evaluation. Since `-` is left-associative, `a - b` is evaluated first, followed by the result minus `c`.
+
+### Example:
+
+Given the operators and their precedence, let's evaluate an example:
+
+```cpp
+int a = 5, b = 10, c = 15, d;
+d = a + b * c; // '*' has higher precedence than '+'
+```
+- Here, `b * c` is evaluated first (due to higher precedence), resulting in `150`.
+- Then `a + 150` is evaluated, resulting in `155`.
+
+For expressions involving multiple operators, understanding both precedence and associativity is crucial for determining the correct order of evaluation.
+
+![20240717_191624](https://github.com/user-attachments/assets/06a6b44f-2948-4338-be92-66726040ef53)
+
+Given the initial values `a = 1`, `b = 2`, `c = 3`, and `d = 4`, let's evaluate each expression step by step:
+
+### Expression 1:
+```cpp
+b *= a > b ? a : b;
+```
+
+1. `a > b` evaluates to `1 > 2`, which is false.
+2. Since the condition is false, `b` is used: `b *= b`.
+3. `b = 2 * 2` equals 4.
+
+Thus, the final value of `b` is 4.
+
+### Expression 2:
+```cpp
+c -= a < b ? a - b : b - a;
+```
+
+1. `a < b` evaluates to `1 < 4`, which is true.
+2. Since the condition is true, `a - b` is used: `c -= (1 - 4)`.
+3. `c = 3 - (-3)` equals 6.
+
+Thus, the final value of `c` is 6.
+
+### Expression 3:
+```cpp
+d %= c < d ? c++ : d++;
+```
+
+1. `c < d` evaluates to `6 < 4`, which is false.
+2. Since the condition is false, `d++` is used. This means the current value of `d` (which is 4) is used, and then `d` is incremented to 5.
+3. `d %= 4` means `d = d % 4`, so `d = 4 % 4` equals 0.
+
+Thus, the final value of `d` is 0.
+
+### Expression 4:
+```cpp
+c += b < b ? ++a : b++;
+```
+
+1. `b < b` evaluates to `4 < 4`, which is false.
+2. Since the condition is false, `b++` is used. This means the current value of `b` (which is 4) is used, and then `b` is incremented to 5.
+3. `c += 4` means `c = c + 4`, so `c = 6 + 4` equals 10.
+
+Thus, the final value of `c` is 10.
+
+### Expression 5:
+```cpp
+d /= d % 3 ? a * b : d % c;
+```
+
+1. `d % 3` evaluates to `0 % 3`, which is 0 (false).
+2. Since the condition is false, `d % c` is used. `d % c` evaluates to `0 % 10`, which is 0.
+3. `d /= 0` is undefined (division by zero). 
+
+Given the previous expressions, `d` would be 0 before this expression. Hence, the above code may raise an error or undefined behavior.
+
+### Expression 6:
+```cpp
+a += ++a % b++ ? c * d : b / c;
+```
+
+1. `++a` pre-increments `a` from 1 to 2.
+2. `b++` uses the current value of `b` (which is 5) and then increments `b` to 6.
+3. `2 % 5` evaluates to 2 (true).
+4. Since the condition is true, `c * d` is used. `c * d` evaluates to `10 * 0`, which is 0.
+5. `a += 0` means `a = a + 0`, so `a = 2 + 0` equals 2.
+
+Thus, the final value of `a` is 2.
+
+Here is the summary of the final values of `a`, `b`, `c`, and `d`:
+- `a = 2`
+- `b = 6`
+- `c = 10`
+- `d = 0`
+
+Note: For the fifth expression, division by zero might lead to an error or undefined behavior.
 
 ### 명령문
 #### 조건문
