@@ -1,31 +1,6 @@
 ---
-categories: [Certificate, "[정보처리기사 Book2]", 7과목[summary]]
+categories: [Certificate, "[정보처리기사 Book2]", 7과목SQL]
 ---
-
-# 8. SQL 응용
-## 절차형 SQL 작성하기
-### 프로시저
-#### 프로시저의 개념
-절자형 SQL을 활용하여 특정 기능을 수행할 수 있는 트랜잭션 언어. 일련의 SQL 작업을 포함하는 데이터 조작어를 수행. 
-
-#### 프로시저 구성
-* 선언부(DECLARE) : 프로시저의 명칭, 변수와 인수, 데이터 타입을 정의
-* 시작/정의부(BEGIN/END) : 프로시저의 시작과 종료
-* 제어부(CONTROL) : 순차적 처리, 조건문과 반복문을 이용
-* SQL : DML문, DDL 중 TRUNCATE 사용
-* 예외부(EXCEPTION)
-* 실행부(TRANSACTION) : 트리거에서 수행된 DML 수해행 내역의 DBMS의 적용 또는 취소 여부를 결정하는 처리부
-
-#### 프로시저 구성 상세
-**선언부**
-
-```SQL
-CREATE [OR REPLACE] PROCEDURE 프로시저_명
-파라미터_명 [MODE] 데이터_타입
-...
-IS
-변수 선언
-```
 
 OR REPLACE : 기존 프로시저 존재 시에 현재 컴파일하는 내용으로 덮어씀
 
