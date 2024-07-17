@@ -1,6 +1,5 @@
 ---
 categories: [Certificate, "[정보처리기사 Book2]",  6과목[코딩]]
-
 ---
 
 
