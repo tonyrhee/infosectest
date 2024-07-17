@@ -9,7 +9,6 @@ layout: page
 {% assign LIST_PREFIX = 'l_' %}
 
 {% assign group_index = 0 %}
-
 {% assign sort_categories = site.categories | sort %}
 
 {% for category in sort_categories %}
@@ -34,10 +33,7 @@ layout: page
 
     <div class="card categories">
       <!-- top-category -->
-      <div
-        id="{{ HEAD_PREFIX }}{{ group_index }}"
-        class="card-header d-flex justify-content-between hide-border-bottom"
-      >
+      <div id="{{ HEAD_PREFIX }}{{ group_index }}" class="card-header d-flex justify-content-between hide-border-bottom">
         <span class="ms-2">
           <i class="far fa-folder{% if sub_categories_size > 0 %}-open{% endif %} fa-fw"></i>
 
@@ -50,44 +46,24 @@ layout: page
             {% if sub_categories_size > 0 %}
               {{ sub_categories_size }}
               {% if sub_categories_size > 1 %}
-                {{
-                  site.data.locales[lang].categories.category_measure.plural
-                  | default: site.data.locales[lang].categories.category_measure
-                }}
+                {{ site.data.locales[lang].categories.category_measure.plural | default: site.data.locales[lang].categories.category_measure }}
               {% else %}
-                {{
-                  site.data.locales[lang].categories.category_measure.singular
-                  | default: site.data.locales[lang].categories.category_measure
-                }}
+                {{ site.data.locales[lang].categories.category_measure.singular | default: site.data.locales[lang].categories.category_measure }}
               {% endif -%}
               ,
             {% endif %}
-
             {{ top_posts_size }}
-
             {% if top_posts_size > 1 %}
-              {{
-                site.data.locales[lang].categories.post_measure.plural
-                | default: site.data.locales[lang].categories.post_measure
-              }}
+              {{ site.data.locales[lang].categories.post_measure.plural | default: site.data.locales[lang].categories.post_measure }}
             {% else %}
-              {{
-                site.data.locales[lang].categories.post_measure.singular
-                | default: site.data.locales[lang].categories.post_measure
-              }}
+              {{ site.data.locales[lang].categories.post_measure.singular | default: site.data.locales[lang].categories.post_measure }}
             {% endif %}
           </span>
         </span>
 
         <!-- arrow -->
         {% if sub_categories_size > 0 %}
-          <a
-            href="#{{ LIST_PREFIX }}{{ group_index }}"
-            data-bs-toggle="collapse"
-            aria-expanded="true"
-            aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger"
-            class="category-trigger hide-border-bottom"
-          >
+          <a href="#{{ LIST_PREFIX }}{{ group_index }}" data-bs-toggle="collapse" aria-expanded="true" aria-label="{{ HEAD_PREFIX }}{{ group_index }}-trigger" class="category-trigger hide-border-bottom">
             <i class="fas fa-fw fa-angle-down"></i>
           </a>
         {% else %}
@@ -102,6 +78,7 @@ layout: page
       {% if sub_categories_size > 0 %}
         <div id="{{ LIST_PREFIX }}{{ group_index }}" class="collapse show" aria-expanded="true">
           <ul class="list-group">
+            {% assign sub_group_index = 0 %}
             {% for sub_category in sub_categories %}
               <li class="list-group-item">
                 <i class="far fa-folder fa-fw"></i>
@@ -112,23 +89,14 @@ layout: page
                 {% assign posts_size = site.categories[sub_category] | size %}
                 <span class="text-muted small font-weight-light">
                   {{ posts_size }}
-
                   {% if posts_size > 1 %}
-                    {{
-                      site.data.locales[lang].categories.post_measure.plural
-                      | default: site.data.locales[lang].categories.post_measure
-                    }}
+                    {{ site.data.locales[lang].categories.post_measure.plural | default: site.data.locales[lang].categories.post_measure }}
                   {% else %}
-                    {{
-                      site.data.locales[lang].categories.post_measure.singular
-                      | default: site.data.locales[lang].categories.post_measure
-                    }}
+                    {{ site.data.locales[lang].categories.post_measure.singular | default: site.data.locales[lang].categories.post_measure }}
                   {% endif %}
                 </span>
 
-                <!-- Third-level categories -->
                 {% assign third_categories = '' | split: '' %}
-
                 {% for post in site.categories[sub_category] %}
                   {% assign third_category = post.categories[2] %}
                   {% if third_category %}
@@ -141,36 +109,42 @@ layout: page
                 {% assign third_categories = third_categories | sort %}
                 {% assign third_categories_size = third_categories | size %}
 
+                <!-- arrow for third level -->
                 {% if third_categories_size > 0 %}
-                  <ul class="list-group ms-4">
-                    {% for third_category in third_categories %}
-                      <li class="list-group-item">
-                        <i class="far fa-folder fa-fw"></i>
+                  <a href="#{{ LIST_PREFIX }}{{ group_index }}_{{ sub_group_index }}" data-bs-toggle="collapse" aria-expanded="false" aria-label="{{ HEAD_PREFIX }}{{ group_index }}_{{ sub_group_index }}-trigger" class="category-trigger hide-border-bottom">
+                    <i class="fas fa-fw fa-angle-right"></i>
+                  </a>
+                {% else %}
+                  <span data-bs-toggle="collapse" class="category-trigger hide-border-bottom disabled">
+                    <i class="fas fa-fw fa-angle-right"></i>
+                  </span>
+                {% endif %}
 
-                        {% capture _third_ctg_url %}/categories/{{ third_category | slugify | url_encode }}/{% endcapture %}
-                        <a href="{{ _third_ctg_url | relative_url }}" class="mx-2">{{ third_category }}</a>
-
-                        {% assign third_posts_size = site.categories[third_category] | size %}
-                        <span class="text-muted small font-weight-light">
-                          {{ third_posts_size }}
-
-                          {% if third_posts_size > 1 %}
-                            {{
-                              site.data.locales[lang].categories.post_measure.plural
-                              | default: site.data.locales[lang].categories.post_measure
-                            }}
-                          {% else %}
-                            {{
-                              site.data.locales[lang].categories.post_measure.singular
-                              | default: site.data.locales[lang].categories.post_measure
-                            }}
-                          {% endif %}
-                        </span>
-                      </li>
-                    {% endfor %}
-                  </ul>
+                <!-- Third level categories -->
+                {% if third_categories_size > 0 %}
+                  <div id="{{ LIST_PREFIX }}{{ group_index }}_{{ sub_group_index }}" class="collapse">
+                    <ul class="list-group">
+                      {% for third_category in third_categories %}
+                        <li class="list-group-item">
+                          <i class="far fa-folder fa-fw"></i>
+                          {% capture _third_ctg_url %}/categories/{{ third_category | slugify | url_encode }}/{% endcapture %}
+                          <a href="{{ _third_ctg_url | relative_url }}" class="mx-2">{{ third_category }}</a>
+                          {% assign third_posts_size = site.categories[third_category] | size %}
+                          <span class="text-muted small font-weight-light">
+                            {{ third_posts_size }}
+                            {% if third_posts_size > 1 %}
+                              {{ site.data.locales[lang].categories.post_measure.plural | default: site.data.locales[lang].categories.post_measure }}
+                            {% else %}
+                              {{ site.data.locales[lang].categories.post_measure.singular | default: site.data.locales[lang].categories.post_measure }}
+                            {% endif %}
+                          </span>
+                        </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
                 {% endif %}
               </li>
+              {% assign sub_group_index = sub_group_index | plus: 1 %}
             {% endfor %}
           </ul>
         </div>
