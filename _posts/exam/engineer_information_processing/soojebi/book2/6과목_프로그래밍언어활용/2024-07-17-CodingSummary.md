@@ -1,5 +1,5 @@
 ---
-categories: [Certificate, "[정보처리기사]  6과목[코딩]"]
+categories: [Certificate, "[정보처리기사]  B2 6과목[코딩]"]
 
 ---
 

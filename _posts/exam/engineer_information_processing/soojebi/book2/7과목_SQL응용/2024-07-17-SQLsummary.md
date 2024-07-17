@@ -1,5 +1,5 @@
 ---
-categories: [Certificate, "[정보처리기사]  7과목[summary]"]
+categories: [Certificate, "[정보처리기사]  B2 7과목[summary]"]
 ---
 
 # 8. SQL 응용
