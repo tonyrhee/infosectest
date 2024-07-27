@@ -62,6 +62,7 @@ tail_includes:
             {% if authors %}
               {% for author in authors %}
                 <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
+                <a class="no-effect-link" rel="noopner" href="https://github.com/tonyrhee/infosectest/blob/main//blob/edit/{{ page.path }}" target="_blank">&#035 EDIT</a>
                 {% unless forloop.last %}{{ '</em>, <em>' }}{% endunless %}
               {% endfor %}
             {% else %}
@@ -72,7 +73,6 @@ tail_includes:
 
         <!-- read time -->
         {% include read-time.html content=content prompt=true lang=lang %}
-        <a class="no-effect-link" rel="noopner" href="https://github.com/aiegoo/documentation/blob/edit/{{ page.path }}" target="_blank"></a>
       </div>
       <!-- .d-flex -->
     </div>
