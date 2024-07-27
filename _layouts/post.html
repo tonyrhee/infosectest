@@ -14,6 +14,7 @@ tail_includes:
 <article class="px-1">
   <header>
     <h1 data-toc-skip>{{ page.title }}</h1>
+    <h3 data-toc-skip><a class="no-effect-link" rel="noopner" href="https://github.com/tonyrhee/infosectest/blob/main//blob/edit/{{ page.path }}" target="_blank">&#035 EDIT</a></h3>
 
     <div class="post-meta text-muted">
       <!-- published date -->
@@ -61,8 +62,7 @@ tail_includes:
           <em>
             {% if authors %}
               {% for author in authors %}
-                <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>
-                <a class="no-effect-link" rel="noopner" href="https://github.com/tonyrhee/infosectest/blob/main//blob/edit/{{ page.path }}" target="_blank">&#035 EDIT</a>
+                <a href="{{ site.data.authors[author].url }}">{{ site.data.authors[author].name }}</a>                
                 {% unless forloop.last %}{{ '</em>, <em>' }}{% endunless %}
               {% endfor %}
             {% else %}
