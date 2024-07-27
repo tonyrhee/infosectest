@@ -28,7 +28,7 @@ tail_includes:
           {% include datetime.html date=page.last_modified_at tooltip=true lang=lang %}
         </span>
       {% endif %}
-         <span><a class="no-effect-link" rel="noopner" href="https://github.com/tonyrhee/infosectest/blob/main//blob/edit/{{ page.path }}" target="_blank">&nbsp &#035EDIT</a></span>
+         <span><a class="no-effect-link" rel="noopner" href="https://github.com/tonyrhee/infosectest/blob/main/{{ page.path }}" target="_blank">&nbsp &#035EDIT</a></span>
       {% if page.image %}
         {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
