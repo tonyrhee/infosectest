@@ -3,6 +3,11 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+11. 가상기억장치 구현기법
+![image](https://github.com/user-attachments/assets/65545b4e-c01a-4671-b7a9-48091c6f1117)
+
+
+
 10. 다음은 파이썬 프로그램이다. 실행 결과를 쓰시오.
 
 ```python
