@@ -3,6 +3,19 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+12. 다음에서 설명하는 네트워크 기술은 무엇인가?
+
+|   |
+|  --  |
+| - 트래픽의 경로를 지정하는 제어 평면과 트래픽 전송을 수행하는 데이터 평면을 분리하여, |
+|  OpenFlow 프로토콜 등을 통해 네트워크를 프로그램할 수 있다. |
+
+
+​`정​​답) SDN(Software Defined Networking)`
+
+해설) ​2023 수제비 정보처리기사 실기책 11-75페이지
+
+
 11. 가상기억장치 구현기법
 ![image](https://github.com/user-attachments/assets/65545b4e-c01a-4671-b7a9-48091c6f1117)
 
