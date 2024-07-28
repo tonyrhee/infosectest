@@ -286,16 +286,14 @@ public class SoojebiMain {        // SoojebiMain 클래스 선언
   }
 }
 
-
 ```
+
 출력결과) `soojebi class`
 
-​```
 
-정답) (1) static
+정답) `(1) static`
 
-     (2) static
-```
+     `(2) static`
 ​​
 
 해설) 2023 수제비 정보처리기사 실기 6-105 페이지
@@ -304,6 +302,7 @@ static 쓰실때, 소문자로 작성해 주세요!
 
 
 4. 다음은 C언어 코드이다. 실행결과를 쓰시오.
+
 
 ```c
 #include <stdio.h>
