@@ -3,6 +3,17 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+10. 다음은 파이썬 프로그램이다. 실행 결과를 쓰시오.
+
+```python
+result = list(filter((lambda x:x%2 == 1), range(5)))
+print(result)
+```
+
+`정답)  [1, 3]`
+
+해설) 수제비 정보처리기사 실기 6-180 ~ 183
+
 9. 다음은 C언어 프로그램이다. 빈칸에 공통으로 들어갈 키워드를 쓰시오.
 
 ```c
