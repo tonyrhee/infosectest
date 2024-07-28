@@ -3,6 +3,19 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+
+
+13. 다음에서 설명하는 데이터베이스 무결성 제약조건(Integrity Constraint)은 무엇인가?
+
+|   |
+|  -- |
+| - 기본키 제약(primary key constraint)이라고도 한다. |
+| - 기본키는 널(NULL) 값을 가져서는 안되며 릴레이션 내에 오직 하나의 값만 존재해야 한다.|
+
+`정답) 개체 무결성(Entity Integrity)`
+해설) 2023 수제비 정보처리기사 실기책 3-30페이지
+
+
 12. 다음에서 설명하는 네트워크 기술은 무엇인가?
 
 |   |
