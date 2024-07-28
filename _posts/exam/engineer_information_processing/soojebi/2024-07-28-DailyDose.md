@@ -3,6 +3,64 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+9. 다음은 C언어 프로그램이다. 빈칸에 공통으로 들어갈 키워드를 쓰시오.
+
+```c
+#include <stdio.h>
+#include <stdlib.h>
+
+struct NODE {       // 구조체 NODE 선언
+    int data;         // NODE에 저장할 data
+    struct NODE *pNext;  // NODE 다음 주소를 저장할 포인터 변수
+};
+
+struct NODE *pHead;    // 구조체 NODE 포인터변수 pHead를 전역변수로 선언, 리스트의 시작 주소값 저장
+
+void push(int data){
+    struct NODE *pEnd = malloc(sizeof(struct NODE));  // 메모리를 할당(memory allocation)
+    pEnd->( _______ ) = pHead->( _______ );     // 리스트에 노드 추가
+    pEnd->data = data;    // 매개변수로 전달받은 data를 리스트에 대입
+    pHead->( _______ ) = pEnd;  // pEnd 값을 pHead의 pNext에 대입
+}
+
+int pop(){
+    int ret;   // 리턴할 값을 저장할 변수
+    struct NODE *pDel = pHead->( _______ );   // 리턴할 노드의 주소를 가리킨 변수 pDel에 pHead->pNext를 대입
+    pHead->( _______ ) = pDel->( _______ );    // pDel->pNext를 pHead의 pNext에 대입
+    ret = pDel->data;   // pDel의 데이터를 ret에 대입
+    free(pDel);   // pDel 의 메모리를 해제
+    return ret;   //ret 값을 리턴함
+}
+
+int main() {
+    int r;
+    pHead = malloc(sizeof(struct NODE));   // pHead 변수로 메모리 할당 받음
+    pHead->pNext = NULL;   // pHead->pNext에는 NULL을 대입
+    
+    push(10);   // 리스트에 10 을 push
+    push(20);  // 리스트에 20 을 push
+    push(30);  // 리스트에 30 을 push
+    
+    r = pop();        // 리스트에서 하나 꺼내어 r에 대입
+    printf("%d", r);  // r을 화면에 출력
+    r = pop();        // 리스트에서 하나 꺼내어 r에 대입
+    printf("%d", r);  // r을 화면에 출력
+    r = pop();       // 리스트에서 하나 꺼내어 r에 대입
+    printf("%d", r);  // r을 화면에 출력
+
+    return 0;  // 0을 리턴하고 프로그램 종료
+}
+```
+
+
+출력결과
+
+302010
+`정답) pNext`
+
+해설) 수제비 정보처리기사 실기 6-63 포인터, 6-70 구조체, 6-124 LinkedList, Stack 참조
+
+
 8. 다음은 자바 코드이다. 프로그램 출력 결과를 쓰시오.
 
 ```java
