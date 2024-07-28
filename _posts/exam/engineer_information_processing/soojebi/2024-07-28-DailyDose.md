@@ -3,6 +3,29 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+2. 다음은 C언어 코드이다. 실행결과를 쓰시오.
+
+```cplus
+
+#include <stdio.h>
+void main(){
+    char arr[32]="What's your ETA?";    // arr을 "What's your ETA?" 대입
+    int i;
+ 
+    for(i=0;arr[i]; i++){
+        if((arr[i]>='a') && (arr[i]<='z')){    // 소문자이면
+            arr[i] = arr[i]-'a'+'A';             // 대문자로 변경
+        }
+    }
+    
+    printf("%s\n",arr);  // arr 출력
+}
+
+```
+
+`정답) WHAT'S YOUR ETA?`
+
+해설) 소문자를 대문자로 변환한다. 
 
 
 1. 다음은 C언어 코드이다. soojebi 라는 문자열을 입력하였다. 실행결과를 쓰시오.
