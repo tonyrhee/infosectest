@@ -3,6 +3,52 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+6. 다음은 JAVA 코드이다. 프로그램 출력 결과를 쓰시오.
+
+```java
+public class Soojebi{
+  public static void main(String[] args){
+    int i = 3;
+    int k = 1;
+    
+    k = i++;
+    
+    System.out.print(i+k);        
+    
+    switch(i){
+      case 0:
+        System.out.print('0');  
+      case 1:
+        System.out.print('1');  
+      case 2:
+        System.out.print('2');  
+      case '3': 
+        k=0;
+        System.out.print('3');
+        break; 
+      case '4': 
+        k+=3;
+        System.out.print('4');
+        break;
+      case 5: 
+        k-=10;
+        System.out.print('5');
+        break;
+      default:
+        k--;
+        System.out.print('d');
+    }
+    System.out.print(k);
+  }
+}
+```
+
+`정답) 7d2`
+
+​해설) ​2023 수제비 정보처리기사 6-32
+
+
+
 5. 다음은 JAVA 코드이다. 빈칸에 들어갈 코드를 작성하시오
 
 ```java
