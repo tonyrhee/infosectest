@@ -3,6 +3,37 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+5. 다음은 JAVA 코드이다. 빈칸에 들어갈 코드를 작성하시오
+
+```java
+class Soojebi {                       // Soojebi 클래스 선언
+  (    (1)    ) void print(){         // static 메서드 선언
+    System.out.println("soojebi class");   // soojebi class 출력
+  }
+}
+
+public class SoojebiMain {        // SoojebiMain 클래스 선언
+  public (    (2)    ) void main(String[] args){   // 메인 메서드 선언
+    Soojebi.print();    // 인스턴스를 생성하지 않고 '클래스명.메서드명' 형태로 호출
+  }
+}
+```
+
+출력결과) `soojebi class`
+
+
+​```
+
+정답) (1) static
+
+     (2) static
+```
+​​
+
+해설) 2023 수제비 정보처리기사 실기 6-105 페이지
+
+static 쓰실때, 소문자로 작성해 주세요! 
+
 
 4. 다음은 C언어 코드이다. 실행결과를 쓰시오.
 
