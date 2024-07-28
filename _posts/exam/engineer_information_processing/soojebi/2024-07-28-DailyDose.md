@@ -45,7 +45,7 @@ public class Soojebi{
 
 `정답) 7d2`
 
-​해설) ​2023 수제비 정보처리기사 6-32
+​해설) ​2023 수제비 정보처리기사 6-32  [딧글](https://cafe.naver.com/soojebi/175704)
 
 
 
