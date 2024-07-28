@@ -17,10 +17,10 @@ public class SoojebiMain {        // SoojebiMain 클래스 선언
     Soojebi.print();    // 인스턴스를 생성하지 않고 '클래스명.메서드명' 형태로 호출
   }
 }
+
+
 ```
-
 출력결과) `soojebi class`
-
 
 ​```
 
