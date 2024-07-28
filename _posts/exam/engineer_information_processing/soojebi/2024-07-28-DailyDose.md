@@ -1,3 +1,8 @@
+---
+categories: [Certificate, "[정보처리기사]",  최종FINAL]
+title: "<수제비 Daily 문제>"
+layout: post
+---
 
 
 
