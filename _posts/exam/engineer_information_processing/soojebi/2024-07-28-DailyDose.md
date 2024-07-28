@@ -3,6 +3,50 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+
+4. 다음은 C언어 코드이다. 실행결과를 쓰시오.
+
+```C
+#include <stdio.h>
+#include <string.h>
+
+int soojebi(char *p, int size){   // soojebi 함수
+  int i;
+    
+  if( p == NULL || size < 0 ){   // 파라미터 예외처리
+    return -1;
+  }
+  
+  for(i=0;i<size;i++){      // 파라미터 전달받은 사이즈만큼 반복 수행
+    if( i%4 == 0) printf("%c", *p );     // i를 4로 나눈 나머지가 0이면 *p를 출력
+  }
+  
+  return 1;   // 1을 리턴
+}
+
+int main(){
+  char *pStr = "hello soojebi";   // 문자열 hello soojebi 선언
+  int ret;  // 함수 결과를 저장할 변수 선언
+  
+  ret = soojebi(pStr, strlen(pStr));  // soojebi 함수 호출
+  if(ret < 0){   // 호출 결과가 0보다 작으면
+      printf("error in soojebi function");  // 에러 출력
+      return -1;  // -1로 프로그램 종료
+  }
+  
+  return 0;   // 0으로 프로그램 종료
+}
+```
+
+```php
+```
+
+`정답) hhhh`
+​​
+해설) "hello soojebi" 문자열을 soojebi 함수로 전달하고 
+전달받은 문자열에서 i가 4로 나눈 나머지가 0일때마다 *p를 출력한다.
+
+
 3. 오류 제어 방식의 종류 중 BEC 방식의 유형에 대한 설명이다. 괄호 (      ) 안에 들어갈 용어를 쓰시오.
 
 - (      ①     )은/는 프레임의 모든 문자로부터 계산되는 잉여 패리티 비트들을 사용하는 이차원(가로/세로) 패리티 검사 방식이다.
