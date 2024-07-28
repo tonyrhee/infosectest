@@ -3,6 +3,23 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+14. 다음 SQL문을 통해 생성된 학생 테이블에 새로운 속성으로 ‘나이’를 추가하고자 한다. 밑줄 친 곳을 채워 알
+맞은 쿼리를 작성하시오. (단, ‘나이’의 데이터 타입은 CHAR(3)이다.)
+
+```sql
+CREATE TABLE 학생 (
+학번 CHAR(10) PRIMARY KEY,
+이름 CHAR(20),
+주소 CHAR(50),
+전화번호 CHAR(13) );
+[쿼리문]
+( ① ) TABLE 학생 ( ② ) 나이 CHAR(3);
+```
+
+정답)
+`① : ALTER`
+`② : ADD`
+해설) 2023 수제비 정보처리기사 실기책 7-13페이지
 
 
 13. 다음에서 설명하는 데이터베이스 무결성 제약조건(Integrity Constraint)은 무엇인가?
