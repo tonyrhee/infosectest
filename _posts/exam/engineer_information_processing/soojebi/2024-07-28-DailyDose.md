@@ -3,6 +3,58 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+8. 다음은 자바 코드이다. 프로그램 출력 결과를 쓰시오.
+
+```java
+abstract class Soojebi{
+  abstract String getName();
+}
+
+class Soojebi1 extends Soojebi{
+  String getName(){  
+    return "soojebi1";
+  }
+}
+
+class Soojebi2 extends Soojebi{
+  String getName(){
+    return "soojebi2";
+  }
+}
+
+abstract class SuperSoojebiFactory{
+  abstract Soojebi createSoojebi(String name);
+}
+
+class SoojebiFactory extends SuperSoojebiFactory {    // SoojebiFactory 클래스 선언
+  Soojebi createSoojebi(String name){    //name으로 전달받은 객체 생성
+    switch(name){   //name이 
+      case "soojebi1":    // soojebi1 이면
+        return new Soojebi1();    // Soojebi1() 생성자 호출하고 리턴
+      case "soojebi2":   // soojebi2 이면
+        return new Soojebi2();   // Soojebi2() 생성자 호출하고 리턴   
+    }
+    return null;   // null을 리턴
+  }
+}
+
+class SoojebiMain{
+  public static void main(String[] args){
+    SoojebiFactory sf = new SoojebiFactory();   // SoojebiFactory 메서드로 sf 객체 생성
+    Soojebi s1 = sf.createSoojebi("soojebi1");    // soojebi 클래스의 s1 객체 생성
+    Soojebi s2 = sf.createSoojebi("soojebi2");    // soojebi 클래스의 s2 객체 생성
+    System.out.println(s1.getName() + s2.getName());   // s1.getName 함수 호출 결과와 s2.getName 함수 호출 결과를 출력
+  }
+}
+```
+
+`정답) soojebi1soojebi2`
+
+​
+
+해설) 수제비 정보처리기사 실기 6-110(상속), 6-117(abstract)
+
+
 7. 다음은 C언어 코드이다. 프로그램 출력 결과를 쓰시오.
 
 ```C
@@ -41,9 +93,11 @@ int main() {
 
 ​나머지 연산자는 다양하게 응용되어 사용 됩니다
 
-약수, 배수 계산 하는 방법 익혀 두세요
+약수, 배수 계산 하는 방법 익혀 두세요 i가 num의 약수인 경우 i = 1, 2, 4, 5, 10
 
-23년 2회차에는 동전 갯수 구하는데 사용 되었어요
+i가 3의 배수인 경우  i = 3, 6, 9, 12, 15, 18  모두 더하면 85
+
+`23년 2회차에는 동전 갯수 구하는데 사용 되었어요`
 
 
 
