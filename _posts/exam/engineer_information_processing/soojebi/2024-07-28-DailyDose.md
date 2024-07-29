@@ -2,6 +2,73 @@
 categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
+22. 다음의 실행 결과는?
+
+```java
+import java.util.ArrayList; // Import ArrayList
+
+interface Observer { // Declare Observer interface
+    public void update(String msg);
+}
+
+class SooOb1 implements Observer { // Declare SooOb1 class
+    public void update(String msg) { // Implement update method
+        System.out.println("Soojebi Observer1: " + msg); // Print msg
+    }
+}
+
+class SooOb2 implements Observer { // Declare SooOb2 class
+    public void update(String msg) { // Implement update method
+        System.out.println("Soojebi Observer2: " + msg); // Print msg
+    }
+}
+
+interface Subject { // Declare Subject interface
+    public void register(Observer o); // Observer registration method
+    public void remove(Observer o); // Observer removal method
+    public void notify(String msg); // Observer notification method
+}
+
+class SoojebiData implements Subject { // SoojebiData class
+    private ArrayList<Observer> observers; // Declare observer list
+    
+    public SoojebiData() {
+        observers = new ArrayList<Observer>(); // Create observer list
+    }
+    
+    public void register(Observer o) { // Implement observer registration
+        observers.add(o); // Add to list
+    }
+    
+    public void remove(Observer o) { // Implement observer removal
+        observers.remove(o); // Remove from list
+    }
+    
+    public void notify(String msg) { // Implement observer notification
+        for (Observer o : observers) { // Notify all observers with msg
+            o.update(msg);
+        }
+    }
+}
+
+class Soojebi {
+    public static void main(String[] args) {
+        SoojebiData sd = new SoojebiData(); // Declare and create SoojebiData object
+        Observer o1 = new SooOb1(); // Declare and create observer o1 object
+        Observer o2 = new SooOb2(); // Declare and create observer o2 object
+        sd.register(o1); // Register o1
+        sd.register(o2); // Register o2
+        sd.remove(o1); // Remove o1
+        sd.notify("notify msg"); // Send msg to observers
+        sd.remove(o2); // Remove o2
+    }
+}
+
+```
+
+정답)   `Soojebi Observer2:notify msg`
+해설) 2023 수제비 정보처리기사 실기 Observer 패턴 예제 코드 입니다
+
 
 21. 다음은 파이썬 프로그램이다. 프로그램 실행 결과를 쓰시오.
 
