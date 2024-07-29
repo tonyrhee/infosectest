@@ -4,6 +4,27 @@ title: "<수제비 Daily 문제>"
 ---
 
 
+20. 다음은 자바 프로그램이다. 프로그램 실행 결과를 쓰시오.
+
+```java
+public class soojebi{
+public static void main(String[] args) {
+  String str = "손흥민,이강인,김민재";
+  String[] arr = str.split(","); //split 함수를 콤마 기준으로 arr[0]에는 손흥민, arr[1]에는 이강
+  for(String s : arr){ // arr을 s에 순차적으로 대입
+  System.out.print(s); // s 출력
+    }
+  }
+}
+```
+정답) `손흥민이강인김민재`
+해설) split 함수를 콤마 기준으로 arr[0]에는 손흥민, arr[1]에는 이강인, arr[2]에는 김민재로 분리한다.
+for문에서 arr배열에서 순차적으로 반복하여 s에 대입하고 s를 출력 한다.
+6-156 페이지의 split을 자바 코드로 출제 하였습니다
+참고해 주세요
+
+
+
 19. 다음은 요구사항 확인 및 검증 단계의 주요 기법에 대한 설명이다. 괄호( ) 안에 들어갈 용어를 쓰시오.
 - ( ① )은/는 2~3명이 진행하는 리뷰의 형태로 요구사항 명세서 작성자가 요구사항 명세서를 설명하고 이해관계자들
 이 설명을 들으면서 결함을 발견하는 형태로 진행하는 검토 방법이다.
@@ -18,7 +39,7 @@ title: "<수제비 Daily 문제>"
 18. 상속
 
 
-```C
+```c
 class T_Soojebi _____(1)_____ Thread{
   public void run(){
     System.out.println("Run");
