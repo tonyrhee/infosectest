@@ -4,7 +4,9 @@ title: "<수제비 Daily 문제>"
 ---
 
 
-18.
+18. 상속
+
+
 ```C
 class T_Soojebi _____(1)_____ Thread{
   public void run(){
