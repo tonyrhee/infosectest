@@ -4,6 +4,30 @@ title: "<수제비 Daily 문제>"
 ---
 
 
+18.
+```C
+class T_Soojebi _____(1)_____ Thread{
+  public void run(){
+    System.out.println("Run");
+  }
+}
+public class Soojebi{
+  public static void main(String[] args){
+    Thread t1 = new T_Soojebi( );
+    Thread t2 = _____(2)______ Thread(new T_Soojebi( ));
+    t1.start();
+    t2.start();
+    System.out.println("Main");
+  }
+}
+```
+
+정답) `(1) extends`
+      `  (2) new`
+
+해설) 수제비 2023 정보처리기사 실기 6-120
+
+
 17. 다음은 C언어 프로그램이다. 실행 결과를 쓰시오.
 
 ```C
