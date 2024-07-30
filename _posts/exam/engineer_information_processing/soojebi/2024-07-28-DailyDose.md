@@ -3,6 +3,40 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+6. 다음은 자바 코드이다. 출력 결과를 쓰시오.
+
+```java
+class Berry{
+ protected String str;
+ public void meth() {
+ print();
+ }
+ public void print() {
+ System.out.print(str);
+ }
+
+}
+class Apple extends Berry{
+ private String str;
+ public void print(){
+ str = "Apple";
+ super.str = "Berry";
+ super.print();
+ System.out.print(str);
+ }
+}
+class Soojebi{
+ public static void main(String args[]){
+ Berry c = new Apple();
+ c.meth();
+ }
+}
+```
+
+정답) `BerryApple`
+참조) 2024 수제비 정보처리기사 실기 기본서 6과목 자바 파트 참고
+
+
 5. 다음은 자바 코드이다. 출력 결과를 쓰시오.
 
 ```java
