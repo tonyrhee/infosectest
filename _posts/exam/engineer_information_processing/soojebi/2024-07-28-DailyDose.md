@@ -4,6 +4,27 @@ title: "<수제비 Daily 문제>"
 ---
 
 
+12. 다음 쿼리를 실행했을 때, 튜플의 수는 얼마인지 쓰시오.
+
+```sql
+CREATE TABLE TBB1 ( NAME VARCHAR2(20), AGE NUMBER(3) );
+CREATE TABLE TBB2 ( NAME VARCHAR2(20), AGE NUMBER(3) );
+INSERT INTO TBB1(NAME, AGE) VALUES('장씨', 30);
+INSERT INTO TBB1(NAME, AGE) VALUES('마씨', 35);
+INSERT INTO TBB1(NAME, AGE) VALUES('홍씨', 40);
+INSERT INTO TBB1(NAME, AGE) VALUES('남씨', 40);
+INSERT INTO TBB2(NAME, AGE) VALUES('장씨', 30);
+INSERT INTO TBB2(NAME, AGE) VALUES('이씨', 50);
+INSERT INTO TBB2(NAME, AGE) VALUES('최씨', 55);
+SELECT * FROM TBB1
+UNION
+SELECT * FROM TBB2;
+```
+
+정답) `6`
+참고) 2024 수제비 정보처리기사 실기 7-27페이지
+
+
 11. 다음 [거래] 테이블을 이용해서 다음 [쿼리]를 실행했을 경우의 결과 값을 쓰시오.
 
 ```
