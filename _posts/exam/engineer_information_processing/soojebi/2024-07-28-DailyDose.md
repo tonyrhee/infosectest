@@ -167,7 +167,7 @@ public class Soojebi {
 ```c
 #include <stdio.h>
 void main() {
- int a[3][2] = {{2, 3}, {5}, {7}};
+ int a[3][2] = {{'2', '3'}, {5}, {7}};
  int i, sum = 0;
  int *p;
  p = a[0];
