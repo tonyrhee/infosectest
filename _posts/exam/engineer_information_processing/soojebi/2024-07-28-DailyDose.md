@@ -37,6 +37,7 @@ FROM 거래);
 - “soojebi” 뷰 테이블 제거
 - “soojebi” 뷰 테이블을 다른 테이블이 참조 중이면 제거하지 않음
 [SQL 문]
+
 ```sql
 DROP VIEW soojebi ______________________ ;
 ```
