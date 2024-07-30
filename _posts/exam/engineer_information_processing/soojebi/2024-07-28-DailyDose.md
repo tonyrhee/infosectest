@@ -3,6 +3,56 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+2. 다음은 C언어 코드이다. 출력 결과를 쓰시오.
+
+```c
+#include <stdio.h>
+void f1(){
+ printf("f1");
+}
+int f2(int a){
+ return a++;
+}
+int main(){
+ int a = 1;
+ void (*pf1)();
+ int (*pf2)(int);
+
+ pf1 = f1;
+ pf2 = f2;
+
+ pf1();
+ a += pf2(5);
+ printf("%d", a);
+
+ return 0;
+}
+```
+
+정답) `f16`
+해설) 2024 수제비 정보처리기사 실기 기본서 6-64페이지
+
+
+
+1. 다음은 C 코드이다. 출력 결과를 쓰시오.
+
+```c
+#include <stdio.h>
+int main() {
+char c = 65;
+int a = (int)1.0;
+printf("%c%d", ++c, a);
+return 0;
+}
+```
+
+정답) `B1`
+해설) 2024 수제비 정보처리기사 실기 기본서 6-21페이지
+
+
+---
+---
+---
 
 36. 다음은 구조적, 행위적 다이어그램에 대한 설명이다. 괄호( ) 안에 들어갈 다이어그램의 종류를 쓰시오.
 
