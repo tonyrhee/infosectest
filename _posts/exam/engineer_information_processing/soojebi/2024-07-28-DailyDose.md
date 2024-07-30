@@ -3,6 +3,58 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+5. 다음은 자바 코드이다. 출력 결과를 쓰시오.
+
+```java
+class Book {
+ private String name;
+ private int year;
+ public String getName(){
+ return name;
+ }
+ public int getYear(){
+ return year;
+ }
+ public void add(String name, int year){
+ this.name = name;
+ this.year = year;
+ }
+}
+public class Soojebi {
+ public static void main(String[] args) {
+ Book b = new Book();
+ b.add("정보처리기사", 24);
+ System.out.print(b.getYear()+2000+b.getName());
+ }
+}
+```
+
+
+정답) `2024정보처리기사`
+해설) https://youtu.be/x8MxyXREyPY?si=v132PzLeFVx2URCu
+참조) 2024 수제비 정보처리기사 실기 기본서 6과목 자바 참고
+
+
+4. 다음은 C언어 코드이다. 출력 결과를 쓰시오.
+
+```c
+#include <stdio.h>
+void main() {
+ int a[3][2] = {{2, 3}, {5}, {7}};
+ int i, sum = 0;
+ int *p;
+ p = a[0];
+ for(i = 0; i < 3; i++)
+ sum += *(p+i);
+ printf("%d", sum);
+}
+```
+
+정답) `10`
+해설) https://youtu.be/EO5p7Rly5Jo?si=Si5MTGleotT-XSAI
+참조) 2024 수제비 정보처리기사 실기 기본서 6과목 C언어 포인터
+
+
 3. 다음은 C언어 코드이다. 출력 결과를 쓰시오.
 
 ```c
