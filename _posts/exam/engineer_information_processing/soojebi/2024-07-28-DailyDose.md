@@ -3,6 +3,26 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+3. 다음은 C언어 코드이다. 출력 결과를 쓰시오.
+
+```c
+#include <stdio.h>
+#define MAX 4
+void fn(int n);
+int main(){
+ fn(MAX);
+ return 0;
+}
+void fn(int n){
+ if(n > 1) fn(n-1);
+ printf("%d", n);
+}
+```
+
+
+정답) `1234`
+해설) 2024 수제비 정보처리기사 실기 기본서 6-47페이지 사용자 정의 함수, 6-52페이지 재귀함수
+
 2. 다음은 C언어 코드이다. 출력 결과를 쓰시오.
 
 ```c
