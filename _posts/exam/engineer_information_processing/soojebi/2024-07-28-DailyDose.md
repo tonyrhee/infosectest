@@ -3,6 +3,48 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+31. 실행 결과를 쓰시오
+
+```c
+-    int c = 1;
+-
+-    switch (3) {
+-        case 1:
+-            c += 3;
+-
+-        case 2:
+-            c++;
+-
+-        case 3:
+-            c = 0;
+-
+-        case 4:
+-            c += 3;
+-
+-        case 5:
+-            c -= 10;
+-
+-        default:
+-            c--;
+```
+답)
+`print("%d", c) -8`
+
+설명)
+```
+The provided C code defines a `main` function that initializes an integer variable `c` to 1. The code then uses a `switch` statement to evaluate the constant value `3`. In a `switch` statement, the program typically executes the code block corresponding to the matching `case` label. However, in this code, there are no `break` statements within the `switch` cases, which means that once a matching case is found, the execution will "fall through" to subsequent cases until the end of the `switch` block or a `break` statement is encountered.
+
+Here's a step-by-step breakdown of what happens:
+
+1. The `switch` statement evaluates the value `3` and jumps to `case 3`.
+2. In `case 3`, the variable `c` is set to 0.
+3. Since there is no `break` statement, the execution continues to `case 4`, where `c` is incremented by 3, making `c` equal to 3.
+4. The execution then falls through to `case 5`, where `c` is decremented by 10, resulting in `c` being -7.
+5. Finally, the execution reaches the `default` case, where `c` is decremented by 1, making `c` equal to -8.
+
+After the `switch` statement, the `printf` function is called to print the value of `c`, which is now -8. The absence of `break` statements in the `switch` cases leads to this cascading effect, which might not be the intended behavior. Typically, each `case` should end with a `break` statement to prevent fall-through unless such behavior is explicitly desired.
+```
+
 
 30. 다음은 보안 시스템에 대한 설명이다. 괄호( ) 안에 들어갈 용어를 쓰시오.
 
