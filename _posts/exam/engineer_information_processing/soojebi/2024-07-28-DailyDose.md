@@ -4,6 +4,34 @@ title: "<수제비 Daily 문제>"
 ---
 
 
+37. C script to turn binary number into decimal value
+
+```c
+#include <stdio.h>
+
+int main() {
+    int input = 101110;
+    int di = 1;
+    int sum = 0;
+
+    // Convert binary to decimal
+    while (input > 0) {
+        int digit = input % 10;
+        if (digit == 1) {
+            sum += di;
+        }
+        di *= 2;
+        input /= 10;
+    }
+
+    // Print the decimal value
+    printf("Decimal value: %d\n", sum);
+
+    return 0;
+}
+```
+
+
 36. java outputs
 
 ```java
