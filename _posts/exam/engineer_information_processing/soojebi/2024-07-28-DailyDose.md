@@ -3,6 +3,28 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+38. c script
+
+
+```c
+
+#include <stdio.h>
+
+main() {
+    int a = 50;
+    int *b = &a;
+    *b = *b + 20;
+    printf("a = %d\n", a, *b);
+    char *s;
+    s = "gilbut";
+    for (int i = 0; i < 6; i += 2) {
+        printf("%c", s[i]);
+        printf("%c, ", *s(s + i));
+        printf("%s \n ", s + i);
+    }
+}
+
+```
 
 37. C script to turn binary number into decimal value
 
