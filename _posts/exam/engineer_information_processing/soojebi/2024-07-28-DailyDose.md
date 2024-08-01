@@ -3,6 +3,73 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+43. c scrpt bubble sort
+
+In the provided C code, we need to fill in the blanks (①) and (②) to ensure that the program functions correctly. Let's analyze the code:
+
+### Code Analysis
+
+1. **Function `swap(int* a, int idx1, int idx2)`**:
+   - This function swaps the elements at indices `idx1` and `idx2` in the array `a`.
+   - The missing code in the swap function `(①)` is intended to set the value of `a[idx2]` to `t` (the temporary variable holding the value of `a[idx1]`).
+
+2. **Function `Usort(int* a, int len)`**:
+   - This is an implementation of the Bubble Sort algorithm. It sorts the array `a` of length `len` in ascending order.
+   - The missing code `(②)` is likely to be the length of the array `a` that needs to be passed to `Usort` when it is called in `main()`.
+
+### Filling in the Blanks
+
+- **(①)** should be the index `idx2` to complete the swap operation. So the correct statement is:
+  ```c
+  a[idx2] = t;
+  ```
+
+- **(②)** should be the length of the array `a`, which is represented by the variable `nx`. So the correct value is:
+  ```c
+  Usort(a, nx);
+  ```
+
+### Completed Code
+
+```c
+#include <stdio.h>
+
+void swap(int* a, int idx1, int idx2) {
+    int t = a[idx1];
+    a[idx1] = a[idx2];
+    a[idx2] = t; // (①)
+}
+
+void Usort(int* a, int len) {
+    for (int i = 0; i < len - 1; i++)
+        for (int j = 0; j < len - 1 - i; j++)
+            if (a[j] > a[j + 1])
+                swap(a, j, j + 1);
+}
+
+int main() {
+    int a[] = { 85, 75, 50, 100, 95 };
+    int nx = 5; // (②)
+    Usort(a, nx);
+    
+    // Print sorted array (optional, for verification)
+    for (int i = 0; i < nx; i++) {
+        printf("%d ", a[i]);
+    }
+    printf("\n");
+
+    return 0;
+}
+```
+
+### Explanation
+
+- The `swap` function exchanges the values at two specified indices in the array.
+- The `Usort` function implements the Bubble Sort algorithm, iterating through the array and repeatedly swapping adjacent elements if they are in the wrong order.
+- In `main()`, `Usort(a, nx)` sorts the array `a` of length `nx`.
+
+This code will sort the array `a` in ascending order and can be verified by printing the sorted array.
+
 42. c memory
 
 To visualize how this C code handles memory, let's break down the details step by step:
