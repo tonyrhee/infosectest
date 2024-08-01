@@ -96,7 +96,7 @@ struct jsu {
 };
 
 int main() {
-    struct jsu st[3] = {{"data"}, 95, 88}, {{"data2"}, 84, 91}, {{"data3"}, 90, 85};
+    struct jsu st[3] = {{\"data\"}, 95, 88}, {{\"data2\"}, 84, 91}, {{\"data3\"}, 90, 85};
     struct jsu* p;
     p = &st[0];
     (p + 1)->hab = (p +1) -> os + (p +2) -> db;
