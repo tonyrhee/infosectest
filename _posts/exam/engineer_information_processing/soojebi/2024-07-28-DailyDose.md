@@ -3,6 +3,58 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+33. 실행 결과는
+
+```java
+public class Copilot {
+    public static void main(String[] args) {
+        String str = "agile";
+        int[] x = {1, 2, 3, 4, 5};
+        char[] y = new char[5];
+        
+        int i = 0;
+        // Fill the char array y with characters from the string str
+        while (i < y.length) {
+            y[i] = str.charAt(i);
+            i++;
+        }
+        // Print characters from y in reverse order interleaved with elements from x
+        for (int p : x) {
+            i--;
+            System.out.print(y[i]);
+            System.out.print(p + "");
+        }
+    }
+}
+```
+
+답) `e1 l2 i3`
+
+
+### Step-by-Step Plan
+
+1. **Initialize Variables**:
+   - `str` is initialized to "agile".
+   - `x` is an array of integers `{1, 2, 3, 4, 5}`.
+   - `y` is a character array of length 5.
+
+2. **Fill the `y` Array**:
+   - Use a `while` loop to fill the `y` array with characters from the string `str`.
+
+3. **Print Characters and Integers**:
+   - Use a `for-each` loop to iterate over the elements of `x`.
+   - In each iteration, print the characters from `y` in reverse order interleaved with elements from `x`.
+
+### Code Execution
+
+1. **Initialization**:
+   ```java
+   String str = "agile";
+   int[] x = {1, 2, 3, 4, 5};
+   char[] y = new char[5];
+   ```
+
+
 32. 숫자를 꺼꾸로 프린트 하는 씨 언어
 
 ```c
