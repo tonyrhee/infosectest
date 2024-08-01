@@ -3,6 +3,59 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+44. factorial
+
+The provided C program calculates the factorial of a given integer input using a recursive function. Let's go through the code step-by-step:
+
+### Code Breakdown
+
+```c
+#include <stdio.h>
+
+int func(int a) {
+    if (a <= 1) return 1;
+    return a * func(a - 1);
+}
+
+int main() {
+    int a;
+    scanf("%d", &a);
+    printf("%d", func(a));
+}
+```
+
+1. **Function `func(int a)`**:
+   - This is a recursive function that calculates the factorial of a given integer `a`.
+   - The base case is `if (a <= 1)`, which returns 1. This handles both 0! (factorial of 0) and 1! (factorial of 1), as both are defined to be 1.
+   - The recursive case is `return a * func(a - 1);`. This calculates `a!` by multiplying `a` by the factorial of `a - 1`.
+
+2. **Function `main()`**:
+   - An integer `a` is declared.
+   - `scanf("%d", &a);` reads an integer from the user and stores it in `a`.
+   - `printf("%d", func(a));` prints the result of `func(a)`, which is the factorial of `a`.
+
+### Execution Flow
+
+- When the user inputs a value, say `5`, the `func` function is called with `a = 5`.
+
+#### Recursive Calls Breakdown
+
+- `func(5)` returns `5 * func(4)`
+- `func(4)` returns `4 * func(3)`
+- `func(3)` returns `3 * func(2)`
+- `func(2)` returns `2 * func(1)`
+- `func(1)` returns `1` (base case)
+
+So the calculation becomes:
+
+- `func(5)` = 5 * `func(4)` = 5 * 4 * `func(3)` = 5 * 4 * 3 * `func(2)` = 5 * 4 * 3 * 2 * `func(1)` = 5 * 4 * 3 * 2 * 1 = 120
+
+Thus, the program outputs `120`.
+
+### Conclusion
+
+The program calculates and prints the factorial of the integer input provided by the user. For an input of `5`, the output will be `120`.
+
 43. c scrpt bubble sort
 
 In the provided C code, we need to fill in the blanks (①) and (②) to ensure that the program functions correctly. Let's analyze the code:
