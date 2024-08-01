@@ -48,11 +48,12 @@ public class Copilot {
 ### Code Execution
 
 1. **Initialization**:
-   ```java
+
+```java
    String str = "agile";
    int[] x = {1, 2, 3, 4, 5};
    char[] y = new char[5];
-   ```
+```
 
 
 32. 숫자를 꺼꾸로 프린트 하는 씨 언어
