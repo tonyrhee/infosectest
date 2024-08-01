@@ -3,6 +3,37 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+32. 숫자를 꺼꾸로 프린트 하는 씨 언어
+
+```c
+#include <stdio.h>
+
+int main() {
+    int num;
+    printf("Enter an integer: ");
+    scanf("%d", &num);
+
+    printf("Numbers in reverse order: ");
+    while (num > 0) {
+        printf("%d ", num % 10);
+        num /= 10;
+    }
+
+    return 0;
+}
+```
+
+해설)
+```
+The provided C code is a simple program that reads an integer from the user and then prints the digits of that integer in reverse order. The program begins with the `main` function, which is the entry point of any C program. Inside the `main` function, an integer variable `num` is declared to store the user input.
+
+The program then prompts the user to enter an integer using the `printf` function, which outputs the string "Enter an integer: " to the console. The `scanf` function is used to read the integer input from the user and store it in the `num` variable. The `%d` format specifier in `scanf` indicates that the input should be read as an integer.
+
+After obtaining the integer input, the program prints the string "Numbers in reverse order: " to the console. It then enters a `while` loop that continues to execute as long as `num` is greater than 0. Inside the loop, the program uses the modulus operator `%` to obtain the last digit of `num` and prints it using `printf`. The `num` variable is then divided by 10 using the `/=` operator, which effectively removes the last digit from `num`.
+
+This process repeats until `num` becomes 0, at which point all the digits of the original integer have been printed in reverse order. Finally, the program returns 0, indicating successful execution. This simple yet effective program demonstrates basic input/output operations, loop constructs, and arithmetic operations in C.
+```
+
 31. 실행 결과를 쓰시오
 
 ```c
