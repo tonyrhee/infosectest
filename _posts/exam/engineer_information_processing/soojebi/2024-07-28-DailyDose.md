@@ -7,6 +7,8 @@ title: "<수제비 Daily 문제>"
 
 The provided C program calculates the factorial of a given integer input using a recursive function. Let's go through the code step-by-step:
 
+[322-recursive](http://gilbut.co/c/23050276Up)
+
 ### Code Breakdown
 
 ```c
