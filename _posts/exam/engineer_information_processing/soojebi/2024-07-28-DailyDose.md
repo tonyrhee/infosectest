@@ -267,7 +267,7 @@ int main() {
 }
 ```
 
-38. c script
+38. c [script](http://gilbut.co/c/23057623Wl)
 
 
 ```c
