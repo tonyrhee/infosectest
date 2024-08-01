@@ -3,6 +3,47 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+
+35. java outputs
+
+
+```java
+public class Test {
+    public static void main(String[] args) {
+        int r = 0;
+        for (int i = 0; i < 999; i++) {
+            if (i % 3 == 0 && i % 2 == 0) {
+                r =  i;
+            }
+        }
+        System.out.print(r);
+    }
+}
+```
+
+
+34. java outputs?
+
+```java
+public class Test {
+    public static void main(String[])  {
+        int j, i;
+        for (j=0, i=0; i<=5; i++) {
+            j += i;
+            System.out.print(i);
+            if (i==5) {
+                System.out.print("=");
+                System.out.print(j);
+            }
+            else {
+                System.out.print("+");
+            }
+        }
+    }
+}
+```
+
+
 33. 실행 결과는
 
 ```java
