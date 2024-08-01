@@ -3,6 +3,88 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+42. c memory
+
+To visualize how this C code handles memory, let's break down the details step by step:
+
+### Code Breakdown
+
+```c
+#include <stdio.h>
+
+main() {
+    struct insa {
+        char name[10];
+        int age;
+    } a[] = { 
+        { "Kim", 28 }, 
+        { "Lee", 38 }, 
+        { "Park", 42 }, 
+        { "Choi", 31 } 
+    };
+    
+    struct insa* p;
+    p = a;
+    p++;
+    printf("%s\n", p->name);
+    printf("%d\n", p->age);
+}
+```
+
+### Memory Representation
+
+1. **Structure Definition**:
+   - `struct insa` defines a structure with two fields: `name` (a character array of size 10) and `age` (an integer).
+
+2. **Array of Structures `a`**:
+   - This array contains four elements, each representing a person with a `name` and an `age`.
+   - The memory layout for each element in the array will allocate space for the `name` array followed by the `age` integer.
+
+3. **Pointer `p`**:
+   - `p` is a pointer to a structure of type `struct insa`.
+
+4. **Memory Allocation**:
+   - Each entry in the array `a` occupies contiguous memory. The size of each element will be the combined size of the `name` and `age` fields.
+   - On a typical system, a `char` takes 1 byte and an `int` takes 4 bytes. Therefore, each `struct insa` will take up `10 + 4 = 14` bytes.
+
+5. **Memory Content**:
+   - Let's assume the base address of the array `a` is `0x1000`. Then:
+     - `a[0]` ("Kim", 28) starts at `0x1000`
+     - `a[1]` ("Lee", 38) starts at `0x100E` (14 bytes later)
+     - `a[2]` ("Park", 42) starts at `0x101C` (another 14 bytes later)
+     - `a[3]` ("Choi", 31) starts at `0x102A`
+
+6. **Pointer Arithmetic**:
+   - Initially, `p = a`, which means `p` points to the first element `a[0]`.
+   - When we execute `p++`, the pointer moves to the next element of the array, i.e., `a[1]`.
+
+### Output
+
+- The code prints the `name` and `age` of the second element (`a[1]`) because the pointer `p` points to it after incrementing. Thus, the output will be:
+  ```
+  Lee
+  38
+  ```
+
+### Memory Store Visualization
+
+Here's a simplified view of the memory layout:
+
+```
+Memory Address    |   Data
+------------------|-----------------
+0x1000            |   "Kim" (10 chars)   28
+0x100E            |   "Lee" (10 chars)   38
+0x101C            |   "Park" (10 chars)  42
+0x102A            |   "Choi" (10 chars)  31
+```
+
+Each row represents an element of the array `a`, with the first part showing the memory for the `name` field and the second part showing the memory for the `age` field.
+
+### Note
+The actual memory addresses and sizes may vary depending on the system architecture, compiler, and alignment requirements. The example above assumes a typical system setup.
+
+
 41. c struct
 
 ```c
