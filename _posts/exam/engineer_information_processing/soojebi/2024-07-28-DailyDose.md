@@ -4,6 +4,23 @@ title: "<수제비 Daily 문제>"
 ---
 
 
+36. java outputs
+
+```java
+public class Test {
+    public static void main(String[] args) {
+        int a = 0, sum = 0;
+        while (a < 10) {
+            a++;
+            if (a%2 ==2)
+                continue;
+            sum += a;
+    }
+    System.out.println(sum);
+    }
+}
+```
+
 35. java outputs
 
 
