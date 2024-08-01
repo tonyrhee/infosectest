@@ -3,6 +3,49 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+41. c struct
+
+```c
+#include <stdio.h>
+
+struct jsu {
+    char nae[12];
+    int os, db, hab, hhab;
+};
+
+int main() {
+    struct jsu st[3] = {{"data"}, 95, 88}, {{"data2"}, 84, 91}, {{"data3"}, 90, 85};
+    struct jsu* p;
+    p = &st[0];
+    (p + 1)->hab = (p +1) -> os + (p +2) -> db;
+    (p + 1) -> hhab = (p + 1) -> hab + p -> os + p -> db;
+    printf("%s %d %d %d %d\n", (p + 1) -> nae, (p + 1) -> os, (p + 1) -> db, (p + 1) -> hab, (p + 1) -> hhab);
+}
+
+```
+
+
+40. c script
+
+```c
+#include <stdio.h>
+
+main() {
+    char* a = "qwer";
+    char* b = "qwtety";
+    for (int i = 0; a[i] !='\0'; i++) {
+        //if (a[i] != b[i]) {
+          //  printf("다르다");
+            //break;
+        for (int j = 0; b[j] != '\0'; j++) {
+            if (a[i] == b[j]) {
+                printf("%c", a[i]);
+            }
+        }
+    }
+}
+```
+
 39. C script
 
 ```c
