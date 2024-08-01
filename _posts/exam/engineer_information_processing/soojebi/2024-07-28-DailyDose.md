@@ -207,7 +207,7 @@ Each row represents an element of the array `a`, with the first part showing the
 The actual memory addresses and sizes may vary depending on the system architecture, compiler, and alignment requirements. The example above assumes a typical system setup.
 
 
-41. c struct
+41. c [struct](http://gilbut.co/c/23052479WB)
 
 ```c
 #include <stdio.h>
