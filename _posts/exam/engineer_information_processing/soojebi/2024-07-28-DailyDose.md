@@ -57,7 +57,17 @@ Thus, the program outputs `120`.
 ### Conclusion
 
 The program calculates and prints the factorial of the integer input provided by the user. For an input of `5`, the output will be `120`.
+```
+The provided C code defines a function named factorial that calculates the factorial of a given integer n using a recursive approach. The factorial of a non-negative integer n is the product of all positive integers less than or equal to n. It is denoted as n! and is defined as n! = n * (n-1) * (n-2) * ... * 1. By definition, the factorial of 0 (0!) and 1 (1!) is 1.
 
+The function factorial takes a single integer parameter n. Inside the function, there is an if statement that checks if n is either 0 or 1. If this condition is true, the function returns 1, as the factorial of 0 and 1 is defined to be 1. This serves as the base case for the recursion, ensuring that the recursive calls eventually terminate.
+
+If n is greater than 1, the else block is executed. In this block, the function returns the product of n and the result of calling factorial with the argument n-1. This recursive call continues to break down the problem into smaller subproblems, each time reducing the value of n by 1, until the base case is reached.
+
+For example, if n is 3, the function will return 3 * factorial(2). The call to factorial(2) will return 2 * factorial(1), and factorial(1) will return 1. Therefore, the final result will be 3 * 2 * 1, which is 6. This recursive approach effectively computes the factorial by multiplying the current number n with the factorial of n-1, building up the result as the recursion unwinds.
+
+Overall, this code demonstrates a classic example of recursion in C, where a function calls itself to solve a problem by breaking it down into smaller, more manageable subproblems.
+```
 43. c scrpt bubble sort
 
 In the provided C code, we need to fill in the blanks (①) and (②) to ensure that the program functions correctly. Let's analyze the code:
