@@ -2,6 +2,30 @@
 categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
+
+46. java output
+
+```java
+class Static {
+    public int a = 20; // instance variable
+    public int b = 0; // instance variable
+
+}
+public class Test {
+    public static void main(String[] args) {
+        Static obj1 = new Static();
+        Static obj2 = new Static();
+        obj1.a = 50;
+        obj1.b = 100;
+        obj2.a = 10;
+        obj2.b = 20;
+        System.out.println(obj1.a + " " + obj1.b);
+        System.out.println(obj2.a + " " + obj2.b);
+    }
+}
+```
+
+
 45. Java Class
 
 ```java
