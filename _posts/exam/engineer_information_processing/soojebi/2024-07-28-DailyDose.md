@@ -2,6 +2,36 @@
 categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
+45. Java Class
+
+```java
+class ClassA {
+    int a = 1-;
+    int funcAdd(int x, int y) {
+        return x + y + a;
+    }
+}
+public class Test {
+    public static void main(String[] args) throws Exception {
+        ClassA obj = new ClassA();
+        System.out.println(obj.funcAdd(1, 2));
+        int x = 3, y = 6, r;
+        r = cal.funcAdd(x, y);
+        System.out.print(r);
+    }
+}
+```
+
+```
+The provided Java code consists of two classes: ClassA and Test. The ClassA class defines an integer instance variable a and a method funcAdd. The Test class contains the main method, which serves as the entry point for the program.
+
+In ClassA, the instance variable a is initialized with the expression 1-, which appears to be a syntax error. The correct initialization should be a valid integer expression, such as int a = 1;. The funcAdd method in ClassA takes two integer parameters, x and y, and returns the sum of x, y, and the instance variable a.
+
+The Test class's main method begins by creating two instances of ClassA, named obj and cal. It then calls the funcAdd method on the obj instance with the arguments 1 and 2, and prints the result to the console. Next, it declares three integer variables, x, y, and r, initializing x to 3 and y to 6. The variable r is assigned the result of calling the funcAdd method on the cal instance with x and y as arguments. Finally, the value of r is printed to the console.
+
+The code demonstrates basic object-oriented principles in Java, such as class definition, instance variable usage, method definition, and object instantiation. However, the syntax error in the initialization of a needs to be corrected for the code to compile and run successfully. Once corrected, the program will output the results of the funcAdd method calls, showing the sum of the provided arguments and the instance variable a.
+```
+
 
 44. factorial
 
