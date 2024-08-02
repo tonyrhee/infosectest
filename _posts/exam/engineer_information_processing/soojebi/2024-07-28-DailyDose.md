@@ -3,6 +3,73 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+48. java usage
+
+```java
+abstract class Vehicle { // Define an abstract class Vehicle
+    String name; // Declare a string variable to store the name of the vehicle
+
+    abstract void display(); // Declare an abstract method to display information about the vehicle
+
+    void show() { // Define a method to display a generic message
+        System.out.println("Zoo");
+    }
+}
+
+class Car extends Vehicle { // Define a subclass Car that extends the Vehicle class
+    Car(String name) { // Constructor to initialize the name of the car
+        this.name = name;
+        display(); // Call the display method
+    }
+
+    void display() { // Implement the display method from the abstract class
+        System.out.println("Vehicle name: " + name);
+    }
+
+    void drive() { // Define a method specific to the Car class
+        System.out.println("Driving the car");
+    }
+}
+
+public class Test { // Main class
+    public static void main(String[] args) {
+        Vehicle v = new Car("Spark"); // Create a new Car object with name "Spark" and assign it to a Vehicle reference
+        v.show(); // Call the show method from the Vehicle class
+        // v.drive(); // Uncomment this line if you want to call the drive method, but it will result in a compilation error
+    }
+}
+```
+
+47. java usage
+
+```java
+abstract class Animal {
+    String a = " is animal";
+    abstract void look();
+    void show() {
+        System.out.println("Zoo");
+    }
+}
+
+class Chicken extends Animal {
+    Chicken() {
+        look();
+    }
+    void look() {
+        System.out.println("Chicken" + a);
+    }
+    void display() {
+        System.out.println("two wings");
+    }
+}
+public class Test {
+    public static void main(String[] args) {
+        Animal a = new Chicken();
+        a.show();
+    }
+}
+```
+
 46. java output
 
 ```java
