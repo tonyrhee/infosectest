@@ -1,6 +1,6 @@
 ﻿---
 categories: [Certificate, "[정보처리기사 Book1]", 3과목 데이터입출력]
-title: "3과목[Chapter 4] 데이타모델정리"
+title: "3과목[Chapter 4]  데이타입출력"
 ---
 
 **<3과목 데이타입출력>**
