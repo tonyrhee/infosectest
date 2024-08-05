@@ -1412,3 +1412,23 @@ ex) **입**력 데이터 검증 표현, **보**안 기능, **시**간 및 상태
 [ref2]: /assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.012.png
 [ref3]: /assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.022.png
 [ref4]: /assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.029.png
+
+
+FileDownloads:
+
+
+| File Name | Link |
+|-----------|------|
+| 정보처리기사 필기, 1과목 소프트웨어 설계 무료공유.docx | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%ED%95%84%EA%B8%B0,%201%EA%B3%BC%EB%AA%A9%20%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EC%84%A4%EA%B3%84%20%EB%AC%B4%EB%A3%8C%EA%B3%B5%EC%9C%A0.docx) |
+| 정보처리기사 필기, 2과목 소프트웨어 개발 무료공유.docx | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%ED%95%84%EA%B8%B0,%202%EA%B3%BC%EB%AA%A9%20%EC%86%8C%ED%94%84%ED%8A%B8%EC%9B%A8%EC%96%B4%20%EA%B0%9C%EB%B0%9C%20%EB%AC%B4%EB%A3%8C%EA%B3%B5%EC%9C%A0.docx) |
+| 정보처리기사 필기, 3과목 데이터베이스 구축 무료공유.docx | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%ED%95%84%EA%B8%B0,%203%EA%B3%BC%EB%AA%A9%20%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4%20%EA%B5%AC%EC%B6%95%20%EB%AC%B4%EB%A3%8C%EA%B3%B5%EC%9C%A0.docx) |
+| 정보처리기사 필기, 4과목 프로그래밍 언어 활용 무료공유.docx | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%ED%95%84%EA%B8%B0,%204%EA%B3%BC%EB%AA%A9%20%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D%20%EC%96%B8%EC%96%B4%20%ED%99%9C%EC%9A%A9%20%EB%AC%B4%EB%A3%8C%EA%B3%B5%EC%9C%A0.docx) |
+| 정보처리기사 필기, 5과목 정보시스템 구축 관리 무료공유.docx | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC%20%ED%95%84%EA%B8%B0,%205%EA%B3%BC%EB%AA%A9%20%EC%A0%95%EB%B3%B4%EC%8B%9C%EC%8A%A4%ED%85%9C%20%EA%B5%AC%EC%B6%95%20%EA%B4%80%EB%A6%AC%20%EB%AC%B4%EB%A3%8C%EA%B3%B5%EC%9C%A0.docx) |
+| 정보처리기사20210515(학생용).hwp | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC20210515(%ED%95%99%EC%83%9D%EC%9A%A9).hwp) |
+| 정보처리기사20210515(해설집).hwp | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC20210515(%ED%95%B4%EC%84%A4%EC%A7%91).hwp) |
+| 정보처리기사20210814(학생용).hwp | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC20210814(%ED%95%99%EC%83%9D%EC%9A%A9).hwp) |
+| 정보처리기사20210814(해설집).hwp | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC20210814(%ED%95%B4%EC%84%A4%EC%A7%91).hwp) |
+| 정보처리기사20220305(학생용).hwp | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC20220305(%ED%95%99%EC%83%9D%EC%9A%A9).hwp) |
+| 정보처리기사20220305(해설집).hwp | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC20220305(%ED%95%B4%EC%84%A4%EC%A7%91).hwp) |
+| 정보처리기사20220424(학생용).hwp | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC20220424(%ED%95%99%EC%83%9D%EC%9A%A9).hwp) |
+| 정보처리기사20220424(해설집).hwp | [Link](https://github.com/aiegoo/infoSecProcessTest/blob/copilot/infoLic/summary/%EC%A0%95%EB%B3%B4%EC%B2%98%EB%A6%AC%EA%B8%B0%EC%82%AC20220424(%ED%95%B4%EC%84%A4%EC%A7%91).hwp) |
