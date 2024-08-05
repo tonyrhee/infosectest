@@ -1103,11 +1103,15 @@ ex) **입**력 데이터 검증 표현, **보**안 기능, **시**간 및 상태
 
 ![ref4]![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.030.png)![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.031.jpeg)
 
+
 ![ref4]![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.032.png)![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.033.png)- **전**위 순회(Pre-Order Traversal): Root → Left → Right
+
 
 ![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.034.png)- **중**위 순회(In-Order Traversal): Left → Root → Right
 
+
 ![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.035.png)- **후**위 순회(Post-Order Traversal): Left → Right → Root
+
 
 **2) 이진 트리 \_\_ 2-6**
 
