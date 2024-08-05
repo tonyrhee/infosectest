@@ -3,7 +3,6 @@ categories: [Certificate, "[정보처리기사 Book1]",  1과목 Requirements]
 title: "1과목[Section 1] 소프트웨어 개발"
 ---
 
-!
 
 <a name="_hlk44238484"></a>**<1과목 소프트웨어 설계>**
 
