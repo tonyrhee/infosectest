@@ -544,9 +544,11 @@ ex) a++, a-- (연산 후 ↑, ↓)
 
 ![](/assets/img/summary/coding/Aspose.Words.356a9752-826a-4f10-9910-bdd8dc44acc6.002.png) -조건이 참일 때 실행할 문장이 하나인 경우
 
-` `if(조건)
+```
+if(조건)
 
-`	`실행할 문장;
+  실행할 문장;
+```
 
 ![](/assets/img/summary/coding/Aspose.Words.356a9752-826a-4f10-9910-bdd8dc44acc6.003.png) -조건이 참일 때 실행할 문장이 두 문장 이상인 경우
 
