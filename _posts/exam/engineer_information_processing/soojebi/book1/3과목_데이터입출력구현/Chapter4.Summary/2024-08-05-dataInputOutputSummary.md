@@ -2,6 +2,7 @@
 categories: [Certificate, "[정보처리기사 Book1]", 3과목 데이터입출력]
 title: "3과목[Chapter 4] 데이타모델정리"
 ---
+[본내용](https://github.com/tonyrhee/infosectest/blob/de8bde97d771f1f0b05a03984e0a2229bb63090e/_posts/exam/engineer_information_processing/soojebi/2024-07-17-database%EC%A0%95%EB%A6%AC4%ED%8E%B8.md) 소스파일을 읽을것
 
 ## 기본
 ### 제약조건 
