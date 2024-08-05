@@ -80,7 +80,7 @@ BCNF
 
   - 조인 종속이 존재하지 않거나 조인 종속에 의해 분해되는 Projection들이 원래 릴레이션의 후보키를 유지
 
-[diagram](https://postfiles.pstatic.net/20111011_237/jmszzzzz_1318332225482k1NAI_PNG/7_4_%C1%B6%C0%CE_%C1%BE%BC%D3%BC%BA%B0%FA_%C1%A6_5_%C1%A4%B1%D4%C7%FC____%B3%D7%C0%CC%B9%F6_%BA%ED%B7%CE%B1%D7.png?type=w1)
+![diagram](https://postfiles.pstatic.net/20111011_237/jmszzzzz_1318332225482k1NAI_PNG/7_4_%C1%B6%C0%CE_%C1%BE%BC%D3%BC%BA%B0%FA_%C1%A6_5_%C1%A4%B1%D4%C7%FC____%B3%D7%C0%CC%B9%F6_%BA%ED%B7%CE%B1%D7.png?type=w1)
 
 ## 반정규화
 
