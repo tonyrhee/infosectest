@@ -3,6 +3,7 @@ categories: [Certificate, "[정보처리기사 Book1]",  1과목 Requirements]
 title: "1과목[Section 1] 소프트웨어 개발"
 ---
 
+## 소프트웨어 설계
 
 <a name="_hlk44238484"></a>**<1과목 소프트웨어 설계>**
 
@@ -416,6 +417,7 @@ Design Improvement(**디**자인 개선) 또는Refactoring(리팩토링)
 
 
 
+## 6과목 시스템 설계
 
 ` `**소프트웨어 아키텍처 ★**
 
