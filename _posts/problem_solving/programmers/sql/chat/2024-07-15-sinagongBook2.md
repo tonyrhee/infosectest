@@ -82,6 +82,67 @@ CREATE TABLE patient (
 `sex  속성은 f 또는 m값만 갖도록 한다 (제약조건명: sec_ck)`
 `id는 doctor 테치블에 있는 doc_id를 참조한다 (제약조건면: id_fk)`
 
+Complete usecase
+
+```sql
+
+-- Inserting sample doctors
+INSERT INTO doctor (doc_id, name, specialty) 
+VALUES 
+('D001', 'Dr. Smith', 'Cardiology'), 
+('D002', 'Dr. Johnson', 'Neurology'), 
+('D003', 'Dr. Lee', 'Pediatrics');
+
+Select * from doctor;
+
+CREATE TABLE patient (
+    id VARCHAR(5) PRIMARY KEY,      -- Unique identifier for each patient
+    name VARCHAR(10),
+    sex CHAR(1),
+    phone VARCHAR(20),
+    doctor_id VARCHAR(5),           -- Foreign key referencing doctor's id
+    CONSTRAINT sex_ck CHECK (sex = 'f' OR sex = 'm'),
+    CONSTRAINT doctor_id_fk FOREIGN KEY (doctor_id) REFERENCES doctor(doc_id)
+);
+
+
+-- Updating the patient table to link with doctor IDs
+UPDATE patient SET id = 'D001' WHERE id = 'P001';
+UPDATE patient SET id = 'D002' WHERE id = 'P002';
+UPDATE patient SET id = 'D003' WHERE id = 'P003';
+
+-- Assuming the doctor table has the following doctors:
+-- doc_id = 'D001', 'D002', 'D003'
+INSERT INTO patient (id, name, sex, phone) 
+VALUES 
+('P001', 'Alice', 'f', '010-1234-5678'), 
+('P002', 'Bob', 'm', '010-2345-6789'), 
+('P003', 'Carol', 'f', '010-3456-7890');
+
+-- These IDs must match existing doctor IDs for the foreign key to work.
+
+Select * from patient;
+```
+
+```
+Output:
+
++--------+-------------+------------+
+| doc_id | name        | specialty  |
++--------+-------------+------------+
+| D001   | Dr. Smith   | Cardiology |
+| D002   | Dr. Johnson | Neurology  |
+| D003   | Dr. Lee     | Pediatrics |
++--------+-------------+------------+
++------+-------+------+---------------+-----------+
+| id   | name  | sex  | phone         | doctor_id |
++------+-------+------+---------------+-----------+
+| P001 | Alice | f    | 010-1234-5678 | NULL      |
+| P002 | Bob   | m    | 010-2345-6789 | NULL      |
+| P003 | Carol | f    | 010-3456-7890 | NULL      |
++------+-------+------+---------------+-----------+
+```
+
 > 118 q-4
 
 ```sql
