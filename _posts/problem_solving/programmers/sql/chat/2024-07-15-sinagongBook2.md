@@ -184,6 +184,23 @@ SELECT Course.id, Course.name, Instructor.name
 FROM Course, Instructor
 WHERE Course.instructor = Instructor.id
 
+-- use below to create view from table patient and docgtor
+Select * from patient;
+
+CREATE VIEW PatientDoctorView (patient_id, patient_name, sex, phone, doctor_id, doctor_name) AS
+SELECT 
+    patient.id AS patient_id,
+    patient.name AS patient_name,
+    patient.sex,
+    patient.phone,
+    doctor.doc_id AS doctor_id,
+    doctor.name AS doctor_name
+FROM 
+    patient
+JOIN 
+    doctor ON patient.doctor_id = doctor.doc_id;
+
+
 ```
 cc 뷰는 ccid, ccname instname속성을 갖는다
 
