@@ -6,6 +6,65 @@ tags: [Programmers, SQL, Oracle, chat]
 
 ## Sinagong
 ### book2
+> 118 q-1
+
+```sql
+-- Create the department table (학과)
+CREATE TABLE department (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(16) NOT NULL UNIQUE
+);
+
+-- Sample data for department table
+INSERT INTO department (name) VALUES ('Computer Science');
+INSERT INTO department (name) VALUES ('Elec Engineering');
+INSERT INTO department (name) VALUES ('Mec Engineering');
+
+-- Create the student table (학생)
+CREATE TABLE student (
+    학번 CHAR(10) UNIQUE NOT NULL,
+    이름 VARCHAR(8) NOT NULL,
+    주민번호 CHAR(8),
+    학과_id INT,
+    FOREIGN KEY (학과_id) REFERENCES department(id)
+);
+
+-- Sample data for student table
+INSERT INTO student (학번, 이름, 주민번호, 학과_id) VALUES ('2023010001', '홍길동', '90010101', 1);
+INSERT INTO student (학번, 이름, 주민번호, 학과_id) VALUES ('2023010002', '김영희', '95020202', 2);
+INSERT INTO student (학번, 이름, 주민번호, 학과_id) VALUES ('2023010003', '이철수', '96030303', 3);
+
+
+Alter Table Student Add 주소 Varchar(100);
+
+UPDATE student SET 주소 = 'Seoul, Gangnam-gu, Apgujeong-dong' WHERE 학번 = '2023010001';
+UPDATE student SET 주소 = 'Busan, Haeundae-gu, Jangsan-dong' WHERE 학번 = '2023010002';
+UPDATE student SET 주소 = 'Incheon, Namdong-gu, Guwol-dong' WHERE 학번 = '2023010003';
+
+-- View the data
+SELECT * FROM student;
+SELECT * FROM department;
+```
+
+```
+Output:
+
++------------+-----------+--------------+-----------+-----------------------------------+
+| 학번       | 이름      | 주민번호     | 학과_id   | 주소                              |
++------------+-----------+--------------+-----------+-----------------------------------+
+| 2023010001 | 홍길동    | 90010101     |         1 | Seoul, Gangnam-gu, Apgujeong-dong |
+| 2023010002 | 김영희    | 95020202     |         2 | Busan, Haeundae-gu, Jangsan-dong  |
+| 2023010003 | 이철수    | 96030303     |         3 | Incheon, Namdong-gu, Guwol-dong   |
++------------+-----------+--------------+-----------+-----------------------------------+
++----+------------------+
+| id | name             |
++----+------------------+
+|  1 | Computer Science |
+|  2 | Elec Engineering |
+|  3 | Mec Engineering  |
++----+------------------+
+```
+
 
 > 118-q3
 
