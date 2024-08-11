@@ -85,6 +85,11 @@ CREATE TABLE patient (
 Complete usecase
 
 ```sql
+CREATE TABLE doctor (
+    doc_id VARCHAR(5) PRIMARY KEY,
+    name VARCHAR(15),
+    specialty VARCHAR(20)
+);
 
 -- Inserting sample doctors
 INSERT INTO doctor (doc_id, name, specialty) 
