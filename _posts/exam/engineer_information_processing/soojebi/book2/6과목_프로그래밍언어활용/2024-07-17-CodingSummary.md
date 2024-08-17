@@ -416,3 +416,28 @@ void main() {
 #### 모듈과 패키지
 * 모듈 : 전역변수, 함수 등을 모아둔 파일 
 * 패키지 : 모듈을 디렉터리 형식으로 구조화한 라이브러리
+
+
+## java
+
+<code>
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        
+        if (scan.hasNextInt()) {
+            int a = scan.nextInt();
+            System.out.printf("a*3 = %d\n", a * 3);
+            System.out.println("a/2 = " + (a / 2));
+            System.out.print("a-1 = " + (a - 1));
+        } else {
+            System.out.println("Error: Please enter a valid integer.");
+        }
+        
+        scan.close();
+    }
+}
+</code>
