@@ -441,3 +441,17 @@ class Main {
     }
 }
 </code>
+
+
+<blockcode>
+#include <stdio.h>
+
+int main() {
+    int result, a = 400, b = 200, c = 300;
+    result = a <b ? b++ : --c;
+    printf("%d, %d , %d\n", result, b, c);
+    return 0;
+}
+</blockcode>
+
+299 200 299
