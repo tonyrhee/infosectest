@@ -420,7 +420,7 @@ void main() {
 
 ## java
 
-<code>
+```cplus
 import java.util.Scanner;
 
 class Main {
@@ -440,10 +440,10 @@ class Main {
         scan.close();
     }
 }
-</code>
+```
 
 
-<blockcode>
+```cplus
 #include <stdio.h>
 
 int main() {
@@ -452,6 +452,6 @@ int main() {
     printf("%d, %d , %d\n", result, b, c);
     return 0;
 }
-</blockcode>
+```
 
 299 200 299
