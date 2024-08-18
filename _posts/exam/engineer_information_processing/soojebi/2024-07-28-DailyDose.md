@@ -3,6 +3,42 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+```java
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Enter an integer: ");
+        
+        if (scan.hasNextInt()) {
+            int a = scan.nextInt();
+            System.out.printf("a*3 = %d\n", a * 3);
+            System.out.println("a/2 = " + (a / 2));
+            System.out.print("a-1 = " + (a - 1));
+        } else {
+            System.out.println("Error: Please enter a valid integer.");
+        }
+        
+        scan.close();
+    }
+}
+```
+
+
+```cplus
+#include <stdio.h>
+
+int main() {
+    int result, a = 400, b = 200, c = 300;
+    result = a <b ? b++ : --c;
+    printf("%d, %d , %d\n", result, b, c);
+    return 0;
+}
+```
+
+299 200 299
+
 48. java usage
 
 ```java
