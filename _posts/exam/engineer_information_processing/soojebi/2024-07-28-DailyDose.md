@@ -71,6 +71,110 @@ int main() {
 
 ```c
 #include <stdio.h>
+void align(int a[]) {
+  int temp;
+  for (int i = 0; i < 4; i++)
+    for (int j = 0; j < 4 - i; j++)
+      if (a[j] > a[j+1]) {
+        temp = a[j];
+        a[j] = a[j + 1];
+        a[j + 1] = temp;
+      } 
+}
+main() {
+  int a[] = {85, 75, 50, 100, 95};
+  align(a);
+  for (int i = 0; i < 5; i++)
+    printf("%d ", a[i]);
+}
+
+```
+
+50 75 85 95 100
+
+```c
+#include <stdio.h>
+int r1() {
+  return 4;
+}
+int r10() {
+  return (30 + r1());
+}
+int 4100() {
+  return (200 + r10());
+}
+int main() {
+  printf("%d\n", r100());
+  return 0;
+}
+```
+
+input = 12, 6
+```c
+#include <stdio.h>
+int sub(int i, int j) {
+  return i = j;
+}
+
+int add(int i, int j) {
+  return i + j;
+}
+main() {
+  int i, j, result;
+  int (*pf) (int, int);
+  scanf("%d, %d", &i, &j);
+
+  pf = (); // 1
+  () = pf(i, j); // 2
+  printf("%d, ", result);
+
+  () = sub; // 3
+  result = (); // 4
+  printf("%d", result);
+}
+
+```
+add result pf pf[i, j]
+
+Fibonacci
+```c
+#include <stdio.h>
+int Fibonacci(int n) {
+  if (n == 0)
+    return 0;
+  else if (n == 1)
+    return ;// 1
+  else 
+    return Fibonacci(?) + Finbonacci(n-1); // 2
+}
+
+int main(void) {
+  int i = 0;
+  for(i = 0; i < 10; i++)
+    printf("%d ", Finbonacci(i));
+  return 0;
+}
+```
+1 n - 1
+
+```c
+#include <stdio.h>
+func(int *p) {
+  printf("%d\n", *p);
+  printf("%d\n", p[2]);
+}
+
+main() {
+  int a[7] = {1, 2, 3, 4, 5};
+  func(a);
+  func(a + 2);
+}
+
+``` 
+1 3 3 5
+
+```c
+#include <stdio.h>
 
 int main() {
     int result, a = 400, b = 200, c = 300;
