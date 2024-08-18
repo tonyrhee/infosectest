@@ -45,7 +45,29 @@ main()
   }
 }
 ```
+```c
+#include <stdio.h>
+#include <string.h>
 
+int main() {
+    int k, n;
+    char st[] = "I am Tom!";
+    char temp;
+    
+    n = strlen(st) - 1;  // Subtract 1 to avoid the null character
+
+    for (k = 0; k < n; k++, n--) {
+        temp = st[k];
+        st[k] = st[n];
+        st[n] = temp;
+    }
+
+    printf("Reversed string: %s\n", st);
+
+    return 0;
+}
+
+```
 
 ```c
 #include <stdio.h>
