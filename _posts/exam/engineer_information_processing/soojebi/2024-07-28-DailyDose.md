@@ -25,7 +25,7 @@ class Main {
 }
 ```
 
-```cplus
+```c
 #include <stdio.h>
 #include <string.h>
 
@@ -47,7 +47,7 @@ main()
 ```
 
 
-```cplus
+```c
 #include <stdio.h>
 
 int main() {
