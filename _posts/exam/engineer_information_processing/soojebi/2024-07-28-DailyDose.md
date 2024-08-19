@@ -3,6 +3,12 @@ categories: [Certificate, "[정보처리기사]",  최종FINAL]
 title: "<수제비 Daily 문제>"
 ---
 
+
+### Python
+
+### Java
+
+
 ```java
 import java.util.Scanner;
 
@@ -25,6 +31,100 @@ class Main {
 }
 ```
 
+```java
+abstract class Animal {
+  String = " is animal.";
+  abstract void look();
+  void show() {
+    System.out.printIn("Zoo");
+  }
+}
+class Chicken extends Animal {
+  Chicken() {
+    look();
+  }
+  void look(){
+    System.out.printIn("Chicken" + a);
+  }
+  void display() {
+    System.out.printIn("two wings.");
+  }
+}
+public static void main(String[] args) {
+  Animal a = new  Chicken();
+  a. show();
+}
+
+```
+
+```java
+class Parent {
+  void show() { System.out.printIn("parent");}
+}
+class Child extends Parent {
+  void show() {System.out.printIn("Child");}
+}
+public class Test {
+  public static void main(String[] args) {
+    Parent pa = new Child();
+    pa.show();
+  }
+}
+```
+
+
+```java
+abstract class Vehicle {
+  String name;
+  abstract public String getName(string val);
+  public String getName() {
+    return "Vehicle name :  " + name;
+  }
+}
+
+class Car extends Vehicle {
+  private String name;
+  public Car(String val) {
+    name = super.name = val;
+  }
+  public String getName(byte[] val) {
+    return "car name : " + val;
+  }
+}
+
+public class Test {
+  public static void main(String[] args) {
+    Vehicle obj = new Car("Spark");
+    System.out.print(obj.getName());
+  }
+}
+```
+
+```java
+class Parent {
+  int compute(int num) {
+    if(num <=1) return num;
+    return compute(num -1) + compute(num -2);
+  }
+}
+class Child extends Parent {
+  int compute(int num) {
+    if(num <= 1) return num;
+    return compute(num - 1) + compute(num -3);
+  }
+}
+
+public class Test {
+  public static void main(String[] args) {
+    Parent obj = new Child();
+    System.out.print(obj.compute(4));
+  }
+}
+
+```
+
+
+### C
 ```c
 #include <stdio.h>
 #include <string.h>
