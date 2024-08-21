@@ -5,7 +5,67 @@ title: "<수제비 Daily 문제>"
 
 
 ### Python
+The code you provided contains some syntax issues. It looks like Python code, but there are errors with the semicolons and indentation that need to be corrected.
 
+Here's the corrected Python code:
+
+```python
+a = 0
+sum = 0
+
+while a < 10:
+    a += 1
+    if a % 2 == 1:
+        continue
+    sum += a
+
+print(sum)
+```
+
+#### Explanation:
+
+1. **Initialization**:
+   - `a = 0`: This initializes `a` to 0.
+   - `sum = 0`: This initializes `sum` to 0.
+
+2. **Loop**:
+   - `while a < 10:`: The loop runs as long as `a` is less than 10.
+   - `a += 1`: Increment `a` by 1 on each iteration.
+
+3. **Condition**:
+   - `if a % 2 == 1:`: Checks if `a` is an odd number (`a % 2 == 1` means that the remainder when `a` is divided by 2 is 1, which indicates an odd number).
+   - `continue`: If `a` is odd, the `continue` statement skips the rest of the loop and moves to the next iteration.
+
+4. **Sum**:
+   - `sum += a`: If `a` is even (not odd), add `a` to `sum`.
+
+5. **Output**:
+   - `print(sum)`: After the loop ends, print the value of `sum`.
+
+#### What the Code Does:
+The code sums all even numbers from 1 to 10.
+
+#### Detailed Walkthrough:
+- `a = 0`, `sum = 0`
+- `a = 1`: It's odd, so `continue` is called, and `sum` remains `0`.
+- `a = 2`: It's even, so `sum = sum + 2` => `sum = 2`.
+- `a = 3`: It's odd, so `continue` is called, and `sum` remains `2`.
+- `a = 4`: It's even, so `sum = sum + 4` => `sum = 6`.
+- `a = 5`: It's odd, so `continue` is called, and `sum` remains `6`.
+- `a = 6`: It's even, so `sum = sum + 6` => `sum = 12`.
+- `a = 7`: It's odd, so `continue` is called, and `sum` remains `12`.
+- `a = 8`: It's even, so `sum = sum + 8` => `sum = 20`.
+- `a = 9`: It's odd, so `continue` is called, and `sum` remains `20`.
+- `a = 10`: It's even, so `sum = sum + 10` => `sum = 30`.
+
+#### Final Output:
+The code will print:
+
+```
+30
+```
+
+So the sum of the even numbers from 1 to 10 is 30.
 ### Java
 
 
@@ -206,6 +266,66 @@ public class Main {
 3
 31
 ```
+
+The provided code demonstrates the use of different numeric literals in Java: **octal**, **hexadecimal**, and **decimal**. Let's break down what each literal means and the output of the program.
+
+### Numeric Literals in Java:
+1. **Octal Literal** (`035`):
+   - In Java, a number that starts with a `0` is interpreted as an octal (base 8) number.
+   - The digits allowed in an octal number are `0` to `7`.
+   - In this case, `035` in octal corresponds to the decimal value:
+     ```
+     3 * 8^1 + 5 * 8^0 = 3 * 8 + 5 * 1 = 24 + 5 = 29
+     ```
+
+2. **Hexadecimal Literal** (`0x35`):
+   - A number that starts with `0x` (or `0X`) is interpreted as a hexadecimal (base 16) number.
+   - The digits allowed in a hexadecimal number are `0` to `9` and `A` to `F` (where `A`=10, `B`=11, ..., `F`=15).
+   - In this case, `0x35` in hexadecimal corresponds to the decimal value:
+     ```
+     3 * 16^1 + 5 * 16^0 = 3 * 16 + 5 * 1 = 48 + 5 = 53
+     ```
+
+3. **Decimal Literal** (`35`):
+   - A regular number without any prefix is interpreted as a decimal (base 10) number.
+   - In this case, `35` remains `35` in decimal.
+
+### Code Analysis:
+
+```java
+public class Main {
+    public static void main(String[] args) {
+        int a = 035;   // Octal literal
+        int b = 0x35;  // Hexadecimal literal
+        int c = 35;    // Decimal literal
+
+        System.out.printf("%d\n", a);  // Prints the decimal equivalent of the octal number
+        System.out.printf("%d\n", b);  // Prints the decimal equivalent of the hexadecimal number
+        System.out.printf("%d\n", c);  // Prints the decimal number
+    }
+}
+```
+
+### Expected Output:
+
+- `a = 035` is an octal number, which equals `29` in decimal.
+- `b = 0x35` is a hexadecimal number, which equals `53` in decimal.
+- `c = 35` is a decimal number, which equals `35` in decimal.
+
+So the program will output:
+
+```
+29
+53
+35
+```
+
+### Summary:
+- **Octal numbers** are represented with a leading `0`.
+- **Hexadecimal numbers** are represented with a leading `0x`.
+- **Decimal numbers** are represented as they are.
+
+In your code, `035` (octal) equals `29` in decimal, `0x35` (hexadecimal) equals `53` in decimal, and `35` (decimal) is `35`.
 
 ### C
 ```c
