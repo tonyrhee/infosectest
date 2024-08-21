@@ -123,6 +123,53 @@ public class Test {
 
 ```
 
+> exception
+
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main {  // Change Test to Main
+    public static void main(String args[]) {
+        int c = 23, div = 6, result = 0;
+        try {
+            while (div > -1) {
+                div--;
+                if (div == 0) {  // Prevent division by zero
+                    throw new ArithmeticException();
+                }
+                if (c / div > 10) {
+                    result = div;
+                }
+                System.out.println(result);  // Corrected method name
+            }
+        } catch (ArithmeticException e) {
+            System.out.println("err01");  // Corrected method name
+            result = -1;
+        } catch (IllegalArgumentException e) {
+            System.out.println("err02");  // Corrected method name
+            result = 1;  // Changed from '01' to '1'
+        } catch (NullPointerException e) {
+            System.out.println("err03");  // Corrected method name
+            result = -1;
+        } finally {
+            if (result == 1)  {
+                System.out.println(" is occurred");  // Corrected method name
+            }
+        }
+    }
+}
+```
+
+```
+0
+0
+0
+2
+1
+err01 is occurred
+```
 
 ### C
 ```c
