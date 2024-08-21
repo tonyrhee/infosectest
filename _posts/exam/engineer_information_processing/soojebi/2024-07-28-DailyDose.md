@@ -171,6 +171,42 @@ public class Main {  // Change Test to Main
 err01 is occurred
 ```
 
+문제 10 (예상문제) 264페이지
+
+**관계연산자 비트와이즈**
+
+```java
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main {
+    public static void main(String args[]) {
+        byte a = 15, b = 19;
+
+        // Bitwise NOT
+        System.out.printf("%d\n", ~a);
+
+        // Bitwise XOR
+        System.out.printf("%d\n", a ^ b);
+
+        // Bitwise AND
+        System.out.printf("%d\n", a & b);
+
+        // Bitwise OR
+        System.out.printf("%d\n", a | b);
+    }
+}
+
+```
+
+```
+-16
+28
+3
+31
+```
+[youtube](https://youtu.be/ufmR4dQ7DVc?si=elthpjYq2o7mC9qt)
 ### C
 ```c
 #include <stdio.h>
