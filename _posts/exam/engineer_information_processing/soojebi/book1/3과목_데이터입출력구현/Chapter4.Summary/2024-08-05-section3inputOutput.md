@@ -19,7 +19,8 @@ title: "3과목[Chapter 4]  데이타입출력"
 
 **1) 자료 구조의 분류**
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.002.png)▶ 선형 구조(Linear Structure)
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.002.png)
+▶ 선형 구조(Linear Structure)
 
 \- 배열(Array)
 
@@ -31,7 +32,8 @@ title: "3과목[Chapter 4]  데이타입출력"
 
 \- 선형 리스트(Linear List) = 연속 리스트(순차적임), 연결 리스트(순차적이지 않음)
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.003.png)▶ 비선형 구조(Non-Linear Structure) 
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.003.png)
+▶ 비선형 구조(Non-Linear Structure) 
 
 \- 트리(Tree)
 
@@ -72,7 +74,8 @@ title: "3과목[Chapter 4]  데이타입출력"
 
 
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.004.png)**6) 선형 리스트(Linear List)**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.004.png)
+**6) 선형 리스트(Linear List)**
 
 ▶ 연속 리스트(Contiguous List)
 
@@ -128,7 +131,8 @@ title: "3과목[Chapter 4]  데이타입출력"
 
 **단말(Terminal): 5** - D, E, H, I, G (자식이 하나도 없는 노드)
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.007.png)**8) 그래프(Graph)**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.007.png)
+**8) 그래프(Graph)**
 
 ▶ 방향 그래프
 
@@ -136,7 +140,8 @@ title: "3과목[Chapter 4]  데이타입출력"
 
 \- n개의 정점으로 구성된 방향 그래프의 최대 간선 수 = n(n-1)
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.008.png) ▶ 무방향 그래프
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.008.png) 
+▶ 무방향 그래프
 
 \- 정점을 연결하는 선에 방향이 없는 그래프
 
@@ -175,7 +180,7 @@ title: "3과목[Chapter 4]  데이타입출력"
 
 
 
-` `**데이터 입, 출력 ★★**
+**데이터 입, 출력 ★★**
 
 **p.171**
 
@@ -231,7 +236,7 @@ title: "3과목[Chapter 4]  데이타입출력"
 
 
 
-` `**절차형 SQL ★**
+**절차형 SQL ★**
 
 **p.173, 2-22**
 
@@ -267,7 +272,7 @@ title: "3과목[Chapter 4]  데이타입출력"
 
 \- 최적화할 쿼리에 대해 옵티마이저(Optimizer)가 수립한 실행 계획을 검토하고 SQL 코드와 인덱스 재구성
 
-` `**개발 지원 도구 ★★**
+**개발 지원 도구 ★★**
 
 **p.186, 2-38**
 
@@ -431,18 +436,7 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 #**식정개 영정추**
 
 
-
-
-
-
-
-
-
-
-
-
-
-` `**디지털 저작권 관리 ★★**
+**디지털 저작권 관리 ★★**
 
 **p.200, 2-51**
 
@@ -548,11 +542,12 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 
 
-` `**버전 관리 도구 ★★**
+**버전 관리 도구 ★★**
 
 **p.213, 2-67**
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.009.png)**1) 공유 폴더 방식**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.009.png)
+**1) 공유 폴더 방식**
 
 \- 버전 관리 자료가 로컬 컴퓨터의 공유 폴더에 저장되어 관리되는 방식
 
@@ -580,7 +575,8 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 \# CVS, SVN(Subversion)
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.011.png)**3) 분산 저장소 방식**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.011.png)
+**3) 분산 저장소 방식**
 
 \- 하나의 원격 저장소와 분산된 개발자 PC의 로컬 저장소에 함께 저장되어 관리되는 방식
 
@@ -619,11 +615,6 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 |diff|지정된 파일이나 경로에 대해 이전 리비전과의 차이를 표시|
 |merge|다른 디렉터리에서 작업된 버전 관리 내역을 기본 개발 작업과 병합|
 
-
-
-
-
-
 **5) Git(깃) ★**
 
 \- 리누스 토발즈(Linus Torvalds)가 2005년 리눅스 커널 개발에 사용할 관리 도구로 개발한 이후 주니오 하마노(Junio Hamano)에 의해 유지 보수되고 있음
@@ -654,7 +645,7 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 \# git init → git remote add → git add -all → git commit → git push
 
-` `**애플리케이션 테스트 ★★**
+**애플리케이션 테스트 ★★**
 
 **p.224, 2-78**
 
@@ -681,11 +672,7 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 #**결완초집 살정오**
 
 
-
-
-
-
-` `**애플리케이션 테스트의 분류 ★★**
+**애플리케이션 테스트의 분류 ★★**
 
 **p.227, 2-33**
 
@@ -707,9 +694,9 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 ![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.014.png)- **구**조 기반 테스트: 소프트웨어 내부의 논리 흐름에 따라 테스트 케이스를 작성하고 확인하는 테스트
 \# 구문 기반, 결정 기반, 조건 기반(화이트박스 테스트)
 
-ㅍ
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.015.png)- **경**험 기반 테스트: 테스터의 경험을 기반으로 수행하는 테스트
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.015.png)
+- **경**험 기반 테스트: 테스터의 경험을 기반으로 수행하는 테스트
 \# 에러 추정, 체크 리스트, 탐색적 테스팅
 
 #**명구경**
@@ -717,10 +704,12 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 **3) 시각에 따른 테스트**
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.016.png)- 검증(Verification) 테스트: 개발자의 시각에서 제품의 생산 과정을 테스트하는 것
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.016.png)
+- 검증(Verification) 테스트: 개발자의 시각에서 제품의 생산 과정을 테스트하는 것
 \# **단**위 테스트, **통**합 테스트, **시**스템 테스트
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.017.png)- 확인(Validation) 테스트: 사용자의 시각에서 생산된 제품의 결과를 테스트하는 것
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.017.png)
+- 확인(Validation) 테스트: 사용자의 시각에서 생산된 제품의 결과를 테스트하는 것
 
 \# **인**수 테스트(알파 테스트, 베타 테스트) **★** **\_\_ 1, 2, 3회 기출문제**
 
@@ -753,7 +742,8 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 **p.229, 2-33, 2-77**
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.018.png)**1) 화이트박스 테스트(White Box Test) \_\_ 20년 1, 2, 3회 기출문제**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.018.png)
+**1) 화이트박스 테스트(White Box Test) \_\_ 20년 1, 2, 3회 기출문제**
 
 \- 모듈 안의 내용(작동)을 직접 볼 수 있음
 
@@ -770,13 +760,8 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 #**기조루흐**
 
-
-
-
-
-
-
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.019.png)**2) 블랙박스(Black Box Test) \_\_ 20년 1, 2, 3회 기출문제**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.019.png)
+**2) 블랙박스(Black Box Test) \_\_ 20년 1, 2, 3회 기출문제**
 
 \- 모듈 안에서 어떤 일(작동)이 일어나는지 알 수 없음
 
@@ -794,14 +779,7 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 #**동경원비오**
 
-
-
-
-
-
-
-
-` `**개발 단계에 따른 애플리케이션 테스트 ★**
+**개발 단계에 따른 애플리케이션 테스트 ★**
 
 **p.232**
 
@@ -843,7 +821,8 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 **p.235, 2-87**
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.020.png)**1) 상향식 통합 테스트(Bottom Up Integration Test)**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.020.png)
+**1) 상향식 통합 테스트(Bottom Up Integration Test)**
 
 \- 프로그램의 하위 모듈에서 상위 모듈 방향으로 통합하면서 테스트하는 기법
 
@@ -935,7 +914,7 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 
 
-` `**결함 관리 ★**
+**결함 관리 ★**
 
 **p.250, 2-81**
 
@@ -1008,7 +987,8 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 **p.267, 2-103**
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.023.png)**1) EAI(Enterprise Application Integration) \_\_ 20년 1, 2회 기출문제**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.023.png)
+**1) EAI(Enterprise Application Integration) \_\_ 20년 1, 2회 기출문제**
 
 \- 기업 내 각종 애플리케이션 및 플랫폼 간의 정보 전달, 연계, 통합 등 상호 연동이 가능하게 해주는 솔루션
 
@@ -1021,7 +1001,8 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 #**포허메하 ★**
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.024.png)**2) ESB(Enterprise Service Bus)**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.024.png)
+**2) ESB(Enterprise Service Bus)**
 
 \- 애플리케이션 간 연계, 데이터 변환, 웹 서비스 지원 등 표준 기반의 인터페이스를 제공하는 솔루션
 
@@ -1034,7 +1015,8 @@ SVN, Git 등 대부분의 형상 관리 도구와 연동 가능
 
 ` `**인터페이스 구현 | 인터페이스 보안 ★★**
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.025.png)**p.276~281, 2-98, 2-112**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.025.png)
+**p.276~281, 2-98, 2-112**
 
 **1) 데이터 통신을 이용한 인터페이스 구현 \_\_ 20년 1, 2회 기출문제**
 
@@ -1085,11 +1067,13 @@ ex) **입**력 데이터 검증 표현, **보**안 기능, **시**간 및 상태
 
 #**엑스피 엔셀와**
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.027.png)**2) 인터페이스 오류 발생 즉시 확인**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.027.png)
+**2) 인터페이스 오류 발생 즉시 확인**
 
 \- 오류 메시지 **알람** 표시, 오류 **SMS** 발송, 오류 내역 **이메일** 발송
 
-![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.028.png)**3) 인터페이스 오류 발생 주기적인 확인**
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.028.png)
+**3) 인터페이스 오류 발생 주기적인 확인**
 
 |**오류 확인 방법**|**특징**|
 | :-: | :-: |
@@ -1102,7 +1086,8 @@ ex) **입**력 데이터 검증 표현, **보**안 기능, **시**간 및 상태
 **1) 트리 순회방법 ★ \_\_ 2-6, 20년 1, 2, 3회 기출문제**
 ![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.031.jpeg)
 
-- **전**위 순회(Pre-Order Traversal): Root → Left → Right ![ref4]![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.030.png)![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.033.png)
+- **전**위 순회(Pre-Order Traversal): Root → Left → Right ![ref4]![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.030.png)
+![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.033.png)
 
 - **중**위 순회(In-Order Traversal): Left → Root → Right ![ref4]![](/assets/img/summary/Aspose.Words.f74caad1-2837-4c27-98f1-9c6264f83dd0.032.png)
 
