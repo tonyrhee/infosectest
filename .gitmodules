@@ -1,3 +1,6 @@
 [submodule "assets/lib"]
 	path = assets/lib
 	url = https://github.com/cotes2020/chirpy-static-assets.git
+[submodule "test-sql"]
+	path = test-sql
+	url = git@github.com:aiegoo/test-sql
