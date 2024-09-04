@@ -2,6 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "MyClass",
+      "request": "launch",
+      "mainClass": "MyClass",
+      "projectName": "codespace_978fb63"
+    },
+    {
+      "type": "java",
+      "name": "MainClass",
+      "request": "launch",
+      "mainClass": "MainClass",
+      "projectName": "codespace_978fb63"
+    },
+    {
+      "type": "java",
+      "name": "Test",
+      "request": "launch",
+      "mainClass": "Test",
+      "projectName": "codespace_978fb63"
+    },
+    {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
       "request": "launch",
