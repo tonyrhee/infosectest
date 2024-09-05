@@ -3,6 +3,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "codespace_978fb63"
+    },
+    {
+      "type": "java",
       "name": "MyClass",
       "request": "launch",
       "mainClass": "MyClass",
