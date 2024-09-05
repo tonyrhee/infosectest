@@ -4,3 +4,18 @@
 [submodule "test-sql"]
 	path = test-sql
 	url = git@github.com:aiegoo/test-sql
+[submodule "test-c"]
+	path = test-c
+	url = git@github.com:aiegoo/test-c
+[submodule "test-java"]
+	path = test-java
+	url = git@github.com:aiegoo/test-java
+[submodule "test-javascript"]
+	path = test-javascript
+	url = git@github.com:aiegoo/test-javascript
+[submodule "test-python"]
+	path = test-python
+	url = git@github.com:aiegoo/test-python
+[submodule "test-shellscript"]
+	path = test-shellscript
+	url = git@github.com:aiegoo/test-shellscript
